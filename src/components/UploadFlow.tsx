@@ -6,6 +6,8 @@ import type { AnalysisResult } from "@/lib/cpic/types";
 import { ReportView } from "@/components/ReportView";
 import { ProvenanceFooter, type DatasetMeta } from "@/components/ProvenanceFooter";
 import { GeneCallPanel } from "@/components/GeneCallPanel";
+import { ClinicalBrief } from "@/components/ClinicalBrief";
+import { PrintButton } from "@/components/PrintButton";
 import { callStarAlleles, looksLikeRawDna, type RawFileResult } from "@/lib/genotype/call";
 
 interface AnalyseResponse {
@@ -58,6 +60,8 @@ export function UploadFlow({
   const [data, setData] = useState<AnalyseResponse | null>(null);
   const [raw, setRaw] = useState<RawFileResult | null>(null);
   const [fileName, setFileName] = useState<string | null>(null);
+  /** Same findings, two audiences. The contrast is the product. */
+  const [view, setView] = useState<"patient" | "clinical">("patient");
   const resultRef = useRef<HTMLDivElement>(null);
 
   const stages = raw ? STAGES_RAW : STAGES_REPORT;
@@ -430,12 +434,59 @@ export function UploadFlow({
             ) : null}
           </div>
 
-          <ReportView
-            result={data.result}
-            header={{ name: "Your medication review" }}
-            recommendationCount={meta.recommendations}
-          />
-          <ProvenanceFooter meta={meta} />
+          {/* Both artifacts come off the same findings, so they cannot drift.
+              Reachable from the primary flow rather than only from the worked
+              example — and rendered from what was actually analysed, not from
+              the demo patient. */}
+          <div className="no-print mb-6 flex flex-wrap items-center gap-2">
+            <div className="inline-flex overflow-hidden rounded-lg border border-border-strong">
+              {(["patient", "clinical"] as const).map((v) => (
+                <button
+                  key={v}
+                  type="button"
+                  onClick={() => setView(v)}
+                  aria-pressed={view === v}
+                  className={`px-3.5 py-1.5 text-xs font-medium transition-colors ${
+                    view === v
+                      ? "bg-foreground text-background"
+                      : "bg-surface hover:bg-accent-soft"
+                  }`}
+                >
+                  {v === "patient" ? "Patient view" : "Physician brief"}
+                </button>
+              ))}
+            </div>
+            {view === "clinical" && <PrintButton />}
+            {view === "clinical" && (
+              <span className="ml-auto text-xs text-faint">
+                Formatted for A4 · one page
+              </span>
+            )}
+          </div>
+
+          {view === "patient" ? (
+            <>
+              <ReportView
+                result={data.result}
+                header={{ name: "Your medication review" }}
+                recommendationCount={meta.recommendations}
+              />
+              <ProvenanceFooter meta={meta} />
+            </>
+          ) : (
+            <div className="text-[13px] leading-snug">
+              <ClinicalBrief
+                result={data.result}
+                subject={{
+                  source: raw
+                    ? `${fileName ?? "raw array file"} — genotypes called on device`
+                    : "Uploaded pharmacogenomic report",
+                }}
+                meta={meta}
+                generatedOn={new Date().toISOString().slice(0, 10)}
+              />
+            </div>
+          )}
         </section>
       )}
     </>

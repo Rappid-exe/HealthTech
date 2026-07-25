@@ -8,10 +8,12 @@ demo pace. Read it out loud with a timer before you trust it.
 ## Before you start
 
 - Browser at the landing page, **already loaded**, scrolled to the top.
-- Second tab open at `/report/clinical` — so the physician brief is one tab
-  away, not one click and a scroll.
 - Zoom at 110–125%. Judges are looking at a projector, not your laptop.
 - Close the terminal. Nothing on screen but the product.
+
+You no longer need a second tab: the physician brief is a toggle on the results
+themselves, and it renders the data you just analysed rather than the worked
+example.
 
 ---
 
@@ -23,7 +25,7 @@ demo pace. Read it out loud with a timer before you trust it.
 | **0:12** | "This is a consumer DNA file — the kind more than forty million people already have sitting in a downloads folder. It's read in my browser. It never gets uploaded." | Click **See it work →** |
 | **0:22** | "Alex is six weeks post-stent, on Plavix. But they're a CYP2C19 poor metaboliser — their body can't activate it. They have been taking a blood thinner that does close to nothing." | Results are already on screen. Point at the red card. |
 | **0:36** | "That's not our opinion. It's the CPIC prescribing guideline, word for word, with its evidence grade and a link to the source." | Point at the quote block, then the **Strong evidence** badge. |
-| **0:45** | "Same data, one page, for a GP with an eight-minute appointment." | Switch to the physician brief tab. |
+| **0:45** | "Same findings, one page, for a GP with an eight-minute appointment." | Click **Physician brief**. Same result, re-rendered — don't say "and here's another page", the point is that it is the *same data*. |
 | **0:52** | "No language model wrote a word of the medicine. It only reads the file. Every recommendation is a published guideline, matched deterministically." | Stay on the brief. Stop talking. |
 
 ---
