@@ -393,13 +393,28 @@ export function UploadFlow({
         {status === "error" && error && (
           <div className="mt-5 rounded-xl border border-[var(--high-border)] bg-[var(--high-surface)] px-5 py-4">
             <p className="text-sm font-medium text-[var(--high)]">{error}</p>
+            {/* Both recovery routes run entirely on committed data, so they
+                work whatever went wrong upstream. Offered as controls rather
+                than described in prose — a failed run should end with something
+                to click, not an explanation. */}
             <p className="mt-1 text-sm text-muted">
-              The{" "}
-              <Link href="/report" className="underline underline-offset-2">
-                worked example
-              </Link>{" "}
-              runs entirely on committed data and needs no API access.
+              Two routes still work, and neither needs that service:
             </p>
+            <div className="mt-3 flex flex-wrap items-center gap-2">
+              <button
+                type="button"
+                onClick={runSample}
+                className="rounded-md border border-border-strong bg-surface px-3 py-1.5 text-xs font-medium hover:border-foreground/30"
+              >
+                Run the sample genome
+              </button>
+              <Link
+                href="/report"
+                className="rounded-md border border-border-strong bg-surface px-3 py-1.5 text-xs font-medium hover:border-foreground/30"
+              >
+                View the worked example
+              </Link>
+            </div>
           </div>
         )}
       </section>

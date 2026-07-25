@@ -151,11 +151,11 @@ function classify(err: unknown): ExtractionError {
     );
   }
   if (err instanceof Anthropic.APIError) {
-    // Deliberately does not surface the provider's own message. A user reading
-    // a lab report has no use for an upstream status code, and the useful
-    // information is that two other routes into the product still work.
+    // Deliberately does not surface the provider's own message — a user reading
+    // a lab report has no use for an upstream status code. The recovery routes
+    // are offered as controls by the caller rather than described in prose.
     return new ExtractionError(
-      "Reading typed reports is unavailable right now. Uploading a raw DNA file still works, and so does the worked example — neither needs this service.",
+      "Reading typed reports is unavailable right now.",
       "unavailable",
     );
   }
