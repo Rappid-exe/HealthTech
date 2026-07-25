@@ -15,7 +15,8 @@
 import { recommendations, drugsById, guidelinesById } from "./data";
 import { triage } from "./match";
 import { lookupPlainEnglish } from "@/lib/plain-english";
-import { classFor, CLASS_ORDER } from "./drug-classes";
+import { classFor, membersOf, CLASS_ORDER } from "./drug-classes";
+import { drugsByName } from "./data";
 import type { ResolvedGenotype, Severity } from "./types";
 
 export interface ProfileEntry {
@@ -43,8 +44,19 @@ export interface DrugProfile {
   avoid: ProfileEntry[];
   adjust: ProfileEntry[];
   standard: ProfileEntry[];
-  /** Grouped for display, in CLASS_ORDER, excluding empty groups. */
-  grouped: Array<{ className: string; entries: ProfileEntry[] }>;
+  /**
+   * Grouped for display, in CLASS_ORDER, excluding empty groups.
+   *
+   * `unaffected` is the rest of the class: drugs CPIC covers where nothing
+   * matched this genotype. Deliberately *not* called "safe" — it means this
+   * genome does not change the usual prescribing advice, which is a narrower
+   * claim and the only one the data supports.
+   */
+  grouped: Array<{
+    className: string;
+    entries: ProfileEntry[];
+    unaffected: string[];
+  }>;
   /** Genes that drove at least one avoid/adjust entry. */
   drivingGenes: string[];
 }
@@ -161,6 +173,10 @@ export function buildProfile(
     else groups.set(cls, [e]);
   }
 
+  // Everything flagged, so the rest of each class can be worked out by
+  // subtraction.
+  const flagged = new Set(actionable.map((e) => e.drugName.toLowerCase()));
+
   const grouped = CLASS_ORDER.filter((c) => groups.has(c)).map((className) => ({
     className,
     entries: groups
@@ -170,6 +186,13 @@ export function buildProfile(
           SEVERITY_RANK[a.severity] - SEVERITY_RANK[b.severity] ||
           a.drugName.localeCompare(b.drugName),
       ),
+    // The rest of the class: drugs CPIC covers, where nothing matched this
+    // genotype. Restricted to drugs CPIC actually knows about — a drug absent
+    // from the dataset entirely tells us nothing, and listing it here would
+    // imply a check we never ran.
+    unaffected: membersOf(className)
+      .filter((name) => !flagged.has(name) && drugsByName.has(name))
+      .sort(),
   }));
 
   const drivingGenes = [...new Set(actionable.flatMap((e) => e.genes))].sort();

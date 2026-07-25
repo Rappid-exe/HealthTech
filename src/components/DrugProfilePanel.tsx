@@ -95,6 +95,19 @@ export function DrugProfilePanel({
                   <DrugChip key={e.drugId} entry={e} />
                 ))}
               </div>
+
+              {/* The question a patient actually has is not "what do I avoid"
+                  but "what can I take". Worded as narrowly as the data allows:
+                  nothing matched this genotype, which is not the same claim as
+                  the drug being safe. */}
+              {group.unaffected.length > 0 && (
+                <p className="mt-2 text-[13px] leading-relaxed text-muted">
+                  <span className="font-medium text-[var(--standard)]">
+                    Your genotype does not change the usual advice for:
+                  </span>{" "}
+                  <span className="capitalize">{group.unaffected.join(", ")}</span>
+                </p>
+              )}
             </div>
           ))}
         </div>
@@ -103,9 +116,11 @@ export function DrugProfilePanel({
           <p className="text-xs leading-relaxed text-muted">
             Derived from the same CPIC dataset as the findings above, matched to{" "}
             {profile.drivingGenes.length} of your gene results (
-            <span className="notation">{profile.drivingGenes.join(", ")}</span>). Drugs
-            with no entry here have no published pharmacogenomic guidance for your
-            genotype.
+            <span className="notation">{profile.drivingGenes.join(", ")}</span>). &ldquo;Does
+            not change the usual advice&rdquo; means CPIC publishes guidance for that drug
+            but none of it applies to your genotype — it is not a statement that the drug
+            is safe for you, which depends on much more than genetics. These lists are not
+            exhaustive.
           </p>
         </div>
       </div>

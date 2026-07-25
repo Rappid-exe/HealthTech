@@ -5,7 +5,7 @@
  */
 
 import { analyse, triage, resolveMedication, resolveGenotype } from "../src/lib/cpic/match";
-import { recommendations, cpicMeta, supportedGenes } from "../src/lib/cpic/data";
+import { recommendations, cpicMeta, supportedGenes, drugsByName } from "../src/lib/cpic/data";
 import { lookupPlainEnglish, plainEnglishMeta } from "../src/lib/plain-english";
 import type { Severity } from "../src/lib/cpic/types";
 
@@ -210,6 +210,42 @@ check(
   "grouping loses nothing",
   ungrouped === profile.avoid.length + profile.adjust.length,
   `${ungrouped} grouped vs ${profile.avoid.length + profile.adjust.length} actionable`,
+);
+
+// "What can I take instead" — the unaffected side of each class.
+const statins = profile.grouped.find((g) => g.className === "Cholesterol");
+check(
+  "statin class offers the clinically correct unaffected options",
+  Boolean(
+    statins?.unaffected.includes("rosuvastatin") &&
+      statins.unaffected.includes("atorvastatin"),
+  ),
+  statins ? statins.unaffected.join(", ") : "no cholesterol group",
+);
+
+// A drug cannot be both flagged and unaffected — that would be a direct
+// contradiction on screen, in the same panel.
+const flaggedNames = new Set(
+  [...profile.avoid, ...profile.adjust].map((e) => e.drugName.toLowerCase()),
+);
+const contradictions = profile.grouped.flatMap((g) =>
+  g.unaffected.filter((d) => flaggedNames.has(d.toLowerCase())),
+);
+check(
+  "no drug appears as both affected and unaffected",
+  contradictions.length === 0,
+  contradictions.join(", "),
+);
+
+// Claiming "your genotype doesn't change the advice" for a drug CPIC has never
+// assessed would be asserting a check we never ran.
+const uncovered = profile.grouped.flatMap((g) =>
+  g.unaffected.filter((d) => !drugsByName.has(d.toLowerCase())),
+);
+check(
+  "unaffected lists only drugs CPIC actually covers",
+  uncovered.length === 0,
+  uncovered.join(", "),
 );
 
 console.log(

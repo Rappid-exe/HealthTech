@@ -151,8 +151,11 @@ function classify(err: unknown): ExtractionError {
     );
   }
   if (err instanceof Anthropic.APIError) {
+    // Deliberately does not surface the provider's own message. A user reading
+    // a lab report has no use for an upstream status code, and the useful
+    // information is that two other routes into the product still work.
     return new ExtractionError(
-      `The extraction service returned an error (${err.status ?? "unknown"}).`,
+      "Reading typed reports is unavailable right now. Uploading a raw DNA file still works, and so does the worked example — neither needs this service.",
       "unavailable",
     );
   }

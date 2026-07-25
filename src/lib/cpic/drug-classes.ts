@@ -117,6 +117,11 @@ export function classFor(drugName: string): string {
   return DRUG_CLASSES[drugName.toLowerCase()] ?? OTHER_CLASS;
 }
 
+/** Every drug curated into a class. Empty for OTHER_CLASS, which is a bucket. */
+export function membersOf(className: string): string[] {
+  return GROUPS[className] ?? [];
+}
+
 /** Display order — the groups people are most likely to meet come first. */
 export const CLASS_ORDER = [
   "Pain relief",
