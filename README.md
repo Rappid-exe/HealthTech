@@ -78,6 +78,37 @@ flowchart LR
     style E fill:#f2f8f5,stroke:#1f6b4a
 ```
 
+## How many people does this affect?
+
+Answered by simulation rather than assertion. `scripts/population-impact.ts`
+draws genotypes from CPIC's own published allele frequencies and runs each
+simulated person through the same engine the product uses — 20,000 people per
+population group, across all nine groups CPIC publishes.
+
+| | |
+|---|---|
+| Carry ≥1 gene result CPIC flags **high priority** | **97–100%** |
+| Carry ≥1 drug with an **avoid** recommendation | 97–100% |
+| Mean number of drugs to avoid, among those | 2.6 – 6.9 |
+| CYP2C19 atypical (European) | 60% |
+| CYP2D6 atypical (European) | 47% |
+
+Nothing in that table is estimated by hand. The frequencies are CPIC's, the
+phenotype calls are CPIC's lookup tables, and the recommendations are CPIC's —
+the simulation only decides which alleles a person is dealt.
+
+Two choices make it conservative rather than flattering. Published frequencies
+never sum to 1, and the remainder is assigned to the *reference* allele, which
+can only understate how many people carry something actionable. And 26.7% of
+draws produce a diplotype CPIC does not list — mostly rare CYP2D6 and DPYD
+combinations — which are excluded rather than guessed at.
+
+An earlier version of this measurement returned exactly 100% for every
+population. That was a broken metric, not a finding: counting any avoid *or*
+adjust across 324 drugs means "use standard dose but monitor" qualifies, so
+everyone passes and the number measures nothing. The headline now uses CPIC's
+own `ehrpriority` flag instead of our severity triage.
+
 ## Two artifacts, one pipeline
 
 | | Patient dashboard | Physician brief |
@@ -86,6 +117,49 @@ flowchart LR
 | Reader | The person taking the drugs | A clinician with eight minutes |
 | Register | Plain language, severity-triaged cards | One page, A4, medical notation |
 | Shared | Identical underlying findings — no divergent second source of truth | |
+
+## Two ways in
+
+**A raw consumer DNA file.** 23andMe and AncestryDNA exports contain the exact
+SNPs CPIC keys on, and tens of millions of people already have one. Beacon
+parses the file and calls star alleles **in the browser** — a 640,000-row export
+in 406 ms — and sends only the resulting handful of diplotypes. The genome never
+leaves the device. No model is involved in this path at all.
+
+Star-allele calling refuses rather than guesses. If an observed genotype
+contains a base outside the definition — the signature of a wrong-strand
+definition — the gene is reported uncallable instead of miscalled. Same for
+no-calls, absent markers, and more than two variant copies (which implies a
+duplication an array cannot resolve). CYP2D6 and DPYD carry explicit notes that
+a chip cannot see copy-number variation.
+
+**A typed report.** Any format. This is where the model earns its place: every
+vendor lays a report out differently, and getting from fifty pages of PDF to
+`CYP2C19 *2/*2` is genuinely hard. `scripts/prove-not-hardcoded.ts` demonstrates
+it is real extraction rather than fixture-matching — it feeds in a report whose
+facts appear nowhere in this repository and checks the result.
+
+## Beyond the drugs you already take
+
+The findings answer "are these five safe". The profile answers the question that
+makes the result worth keeping: what happens the next time someone writes you a
+prescription.
+
+For the sample genome, CPIC has guidance on 40 drugs, of which 17 should be
+avoided. The user listed five.
+
+That larger view surfaces a trap the findings cannot. A CYP2D6 poor metaboliser
+told only that codeine will not work for them is likely to be offered **tramadol**
+next — which fails for exactly the same reason, on the same enzyme. Beacon says
+so, and orders those callouts so that same-class substitutes lead: sharing an
+enzyme makes tramadol and nortriptyline identical cases, but only one is a drug
+someone reaches for *instead of* codeine.
+
+Each class also shows the other side — the drugs where nothing matched this
+genotype. For an SLCO1B1 poor-function patient that surfaces atorvastatin and
+rosuvastatin, which is the clinically correct answer. The wording is as narrow as
+the data allows: *"your genotype does not change the usual advice"* is not *"this
+is safe for you"*.
 
 ## Data provenance
 
@@ -135,6 +209,24 @@ Verify the engine against the real dataset:
 
 ```bash
 npx tsx scripts/verify-engine.ts
+```
+
+Verify star-allele calling, including the committed sample genome:
+
+```bash
+npx tsx scripts/verify-genotype-calling.ts
+```
+
+Demonstrate that report extraction is a real model call, not a lookup:
+
+```bash
+npx tsx scripts/prove-not-hardcoded.ts
+```
+
+Reproduce the population figures:
+
+```bash
+npx tsx scripts/population-impact.ts
 ```
 
 The verification script checks genotype resolution, brand-name handling,
