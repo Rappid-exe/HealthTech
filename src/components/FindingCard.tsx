@@ -67,6 +67,24 @@ export function FindingCard({
           <p className="mt-1 text-xs text-faint">Guidance for: {indication}</p>
         )}
 
+        {/* Plain language leads. This is the person who is actually taking the
+            drug; the prescriber's phrasing is kept below, attributed, but it
+            should not be the first thing they have to decode. */}
+        {finding.plainEnglish && (
+          <div className="mt-3.5">
+            <p
+              className={`font-semibold leading-snug text-balance ${
+                prominent ? "text-xl" : "text-[17px]"
+              }`}
+            >
+              {finding.plainEnglish.headline}
+            </p>
+            <p className="mt-1.5 text-[15px] leading-relaxed text-foreground/85">
+              {finding.plainEnglish.detail}
+            </p>
+          </div>
+        )}
+
         <div className="mt-4 space-y-3">
           <div>
             <p className="text-xs font-semibold uppercase tracking-wider text-faint">
@@ -87,22 +105,9 @@ export function FindingCard({
             </div>
           </div>
 
-          {implication.length > 0 && (
-            <div>
-              <p className="text-xs font-semibold uppercase tracking-wider text-faint">
-                What this means
-              </p>
-              {implication.map(([gene, text]) => (
-                <p key={gene} className="mt-1 text-[15px] leading-relaxed text-foreground/90">
-                  {text}
-                </p>
-              ))}
-            </div>
-          )}
-
           <div>
             <p className="text-xs font-semibold uppercase tracking-wider text-faint">
-              Guideline recommendation
+              What the guideline says
             </p>
             <blockquote
               className={`mt-1.5 border-l-2 ${ui.border} ${ui.surface} py-2.5 pl-3.5 pr-3 font-medium leading-relaxed ${
@@ -112,6 +117,23 @@ export function FindingCard({
               {finding.recommendation}
             </blockquote>
           </div>
+
+          {/* The source implication, kept visible but subordinate. Without the
+              plain-English layer above it this was the headline, which is how
+              the product ended up explaining a drug to a patient in the
+              language of a prescribing committee. */}
+          {implication.length > 0 && (
+            <div>
+              <p className="text-xs font-semibold uppercase tracking-wider text-faint">
+                In clinical terms
+              </p>
+              {implication.map(([gene, text]) => (
+                <p key={gene} className="mt-1 text-[13px] leading-relaxed text-muted">
+                  {text}
+                </p>
+              ))}
+            </div>
+          )}
 
           {finding.comments && (
             <p className="text-[13px] leading-relaxed text-muted">{finding.comments}</p>

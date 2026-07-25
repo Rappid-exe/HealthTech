@@ -33,11 +33,36 @@ This inversion is the point of the project. Ask any health-AI demo "how do you
 know the model didn't invent that?" and the answer is usually a shrug and a
 disclaimer. Here, every recommendation shown to a user is a verbatim row from
 CPIC's published dataset, carried through with its evidence grade, its clinical
-indication, and a link to the source guideline. The model never writes, edits,
-ranks, or summarises the medicine.
+indication, and a link to the source guideline. **The model does not decide
+anything clinical** — it does not choose the recommendation, grade the evidence,
+rank the findings, or judge severity. All of that is a table lookup.
 
-What the model *is* good for — and what it does here — is reading a genotype out
-of whatever chaotic format a consumer lab decided to use this quarter.
+The model does exactly two jobs:
+
+**Extraction.** Reading a genotype out of whatever chaotic format a consumer lab
+decided to use this quarter. This is genuinely hard and genuinely worth a model.
+Its output is validated against the genes we hold tables for before it reaches
+the engine, so an invented gene symbol is dropped rather than carried forward.
+
+**Translation.** Restating CPIC's guidance in language the patient can use. The
+source text is written for prescribers — *"significantly reduced clopidogrel
+active metabolite formation; increased on-treatment platelet reactivity"* — and
+a product whose entire premise is reaching the person taking the drug cannot
+hand them that and call it done.
+
+Three constraints keep the translation honest:
+
+- It is **generated once and committed** (`src/data/plain-english.json`, 368
+  entries), not written per request. So it can be read, reviewed and corrected
+  by a human, and the same input always produces the same words.
+- It is **never shown alone**. The verbatim CPIC recommendation sits directly
+  beneath it, and carries the instruction.
+- It is **forbidden from instructing**. The prompt bars it from telling the
+  reader to do anything, from adding facts the source does not contain, and from
+  softening or amplifying severity. It explains; the guideline directs.
+
+If a translation is ever missing, the UI falls back to the source text — the
+failure mode is clinical language, not silence or invention.
 
 ```mermaid
 flowchart LR

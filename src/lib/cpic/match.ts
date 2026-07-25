@@ -18,6 +18,7 @@ import {
   type CpicRecommendation,
 } from "./data";
 import { BRAND_TO_GENERIC, normaliseMedicationName } from "./brands";
+import { lookupPlainEnglish } from "@/lib/plain-english";
 import type {
   AnalysisResult,
   Finding,
@@ -293,6 +294,7 @@ export function analyse({ genotypes, medications }: AnalyseInput): AnalysisResul
         genotypes: used,
         recommendation: rec.recommendation,
         implications: rec.implications ?? {},
+        plainEnglish: lookupPlainEnglish(rec.recommendation, rec.implications ?? {}),
         classification: rec.classification,
         population: rec.population,
         comments: rec.comments,

@@ -1,0 +1,1481 @@
+{
+  "generatedAt": "2026-07-25T14:23:57.317Z",
+  "model": "claude-opus-5",
+  "sourcePairs": 368,
+  "translated": 368,
+  "note": "Generated once and committed so it can be reviewed. Explanatory only — the verbatim CPIC recommendation is always displayed alongside and carries the instruction.",
+  "translations": {
+    "c871150bfb91a080": {
+      "headline": "Your genes mean a bad allergic reaction to abacavir is unlikely.",
+      "detail": "Some people carry a gene change that makes their immune system attack when they take abacavir. You do not carry it, so this reaction is unlikely for you."
+    },
+    "2ffffb8e55678ea5": {
+      "headline": "Your genes make a severe allergic reaction to abacavir very likely.",
+      "detail": "You carry a gene change that makes your immune system react strongly to abacavir. This kind of reaction can be serious and can get worse each time the drug is taken."
+    },
+    "dc634c5cf2dcd473": {
+      "headline": "Your genes mean a severe skin reaction to allopurinol is unlikely.",
+      "detail": "Some people carry a gene change linked to dangerous skin and body-wide reactions to allopurinol. You do not carry it, so that risk is low for you."
+    },
+    "a47509b16381df80": {
+      "headline": "Your genes make a dangerous skin reaction to allopurinol much more likely.",
+      "detail": "You carry a gene change that makes your immune system react badly to allopurinol. This can cause severe skin damage that is life-threatening."
+    },
+    "8a972f58d9480501": {
+      "headline": "These antibiotics could permanently damage your hearing.",
+      "detail": "A change in your mitochondrial genes makes the tiny hearing cells in your inner ear very sensitive to aminoglycoside antibiotics. Hearing lost this way does not come back."
+    },
+    "7dc9dd7ed3850c9b": {
+      "headline": "Your hearing risk from these antibiotics is the same as most people's.",
+      "detail": "You do not carry the gene change that makes the inner ear extra sensitive to aminoglycoside antibiotics. These medicines can still affect hearing in anyone, so hearing is normally kept an eye on."
+    },
+    "08995dbbec0ce596": {
+      "headline": "Your gene result does not clearly raise your hearing risk.",
+      "detail": "You have a change in the MT-RNR1 gene, but there is little or no evidence that this particular change leads to hearing loss with aminoglycoside antibiotics. These medicines can affect hearing in anyone, so hearing is normally kept an eye on."
+    },
+    "a84d62e1e0dd5966": {
+      "headline": "Your red blood cells are unlikely to break down from this medicine.",
+      "detail": "G6PD is a protein that protects red blood cells from stress. Your G6PD result means this drug is unlikely to cause your red cells to break apart."
+    },
+    "50a7a37ff1df57a6": {
+      "headline": "At usual doses, this medicine is unlikely to harm your red blood cells.",
+      "detail": "G6PD is a protein that shields red blood cells from damage. With your G6PD result, standard doses of this drug are not expected to make your red cells break apart."
+    },
+    "a5a45014630f3489": {
+      "headline": "Your red blood cells are very unlikely to break down from this medicine.",
+      "detail": "G6PD is a protein that protects red blood cells from stress. Your G6PD result means there is little or no chance of this drug making your red cells break apart."
+    },
+    "b03cf5d1b5da2e9d": {
+      "headline": "This medicine could make your ongoing red blood cell breakdown suddenly worse.",
+      "detail": "Your red blood cells already break down faster than normal because your G6PD protein is missing. This drug can add extra stress and trigger a sudden, sharp drop in your red cells."
+    },
+    "9d0131a6209e321e": {
+      "headline": "Your gene result alone cannot show how much G6PD you have.",
+      "detail": "G6PD is a protein that protects red blood cells, and this drug can cause them to break apart in people who have too little of it. A blood test that measures how well the protein actually works is what shows your true level."
+    },
+    "bbf2beda3836f628": {
+      "headline": "Your body clears this medicine more slowly than most people.",
+      "detail": "Because it breaks down slower than usual, more of the active drug can build up in your blood. Higher levels make side effects more likely."
+    },
+    "fd6be4b0c285e66b": {
+      "headline": "Your body handles this medicine much like most people do.",
+      "detail": "One of the enzymes that breaks it down works a bit slower than usual, but overall your body processes this type of medicine normally."
+    },
+    "c966d85903313ac8": {
+      "headline": "You have the usual, low risk of a serious skin reaction.",
+      "detail": "Your genetic result does not raise your chance of the rare but severe skin reactions that this medicine can sometimes cause."
+    },
+    "ebcadae9609b8797": {
+      "headline": "Your body breaks this medicine down very slowly.",
+      "detail": "Much more of the active drug can stay in your blood than in most people. These high levels make side effects considerably more likely."
+    },
+    "116034d594fd4d4e": {
+      "headline": "Your body breaks this medicine down too quickly to work well.",
+      "detail": "The active drug is turned into weaker forms faster than usual, so the amount left in your blood may be too low for the medicine to help you."
+    },
+    "4d7a3af3996d7ad4": {
+      "headline": "Your body breaks this medicine down too quickly to work well.",
+      "detail": "The active drug is cleared faster than in most people, so the level in your blood may stay too low for the medicine to do its job."
+    },
+    "005369184c132c86": {
+      "headline": "One enzyme in your body works slower than usual with this medicine.",
+      "detail": "This part of the breakdown process is slower than in most people. There is not enough information to say what this means for your dose."
+    },
+    "16e0759cec614f94": {
+      "headline": "One enzyme in your body works slower than usual with this medicine.",
+      "detail": "This step of breaking the medicine down is slower than in most people, but overall your body is still expected to handle it normally."
+    },
+    "25dd6363f5a1c7dd": {
+      "headline": "Your body clears this medicine more slowly than most people.",
+      "detail": "More of the active drug can build up in your blood because it is broken down slowly. Higher levels make side effects more likely."
+    },
+    "6ffeec3be43b10d0": {
+      "headline": "Your body handles this medicine the same way most people do.",
+      "detail": "The enzymes that break this medicine down work at a typical speed, so the amount in your blood should be about what is expected."
+    },
+    "1f13a075e36f24f5": {
+      "headline": "Your body breaks this medicine down very slowly.",
+      "detail": "Far more of the active drug can stay in your blood than in most people. These high levels make side effects considerably more likely."
+    },
+    "314423fc0def0c6b": {
+      "headline": "Your body breaks this type of medicine down at a normal speed.",
+      "detail": "The enzyme involved works as expected. There is no specific guidance tied to your result for this medicine."
+    },
+    "df6cd3c2c81a461e": {
+      "headline": "Your body handles this medicine in the usual way.",
+      "detail": "Your genes give you a normal ability to break down this type of medicine. There is no reason to expect the drug to behave differently in you than in most people."
+    },
+    "60341189c53a88d0": {
+      "headline": "This medicine builds up in you, raising side effect risk.",
+      "detail": "Your body breaks this medicine down more slowly than usual, so more of the active drug stays in your blood. You also change very little of it into the related form your body normally makes, which can affect how well it works and what side effects you get."
+    },
+    "279ad2d5ad616f42": {
+      "headline": "Your body clears this medicine too fast, so it may not work.",
+      "detail": "You break this medicine down into weaker forms more quickly than most people. That leaves too little active drug in your blood, so the treatment may simply fail to help."
+    },
+    "18802c316a09ae58": {
+      "headline": "Part of this medicine's breakdown is very slow in you.",
+      "detail": "One of your body's routes for handling this medicine works normally, but the other barely works at all. Much less of the drug is changed into the related form your body normally makes, which can change how well it works and what side effects you feel."
+    },
+    "e957255d141b203c": {
+      "headline": "This medicine builds up strongly, making side effects much more likely.",
+      "detail": "Your body is very slow at breaking this medicine down into weaker forms, so far more active drug stays in your blood. You also make very little of the related form your body normally produces, which can affect the response and side effects."
+    },
+    "2ef3fa8f5004661b": {
+      "headline": "This medicine can dangerously damage your bone marrow.",
+      "detail": "Your body cannot break this medicine down, so huge amounts of the active substance build up inside your red blood cells. This can severely lower your white blood cells and stop your bone marrow working, which can be fatal without a much smaller dose."
+    },
+    "4ac904374588cd0d": {
+      "headline": "Your two breakdown routes pull in opposite directions.",
+      "detail": "One route clears this medicine faster than usual, which can leave too little active drug for it to work. The other route is very slow, so much less is changed into the related form your body normally makes, affecting response and side effects."
+    },
+    "2f7e409e896663d7": {
+      "headline": "This type of antidepressant may not work well for you.",
+      "detail": "Your body is very slow at changing this medicine into the related form it normally makes. That can leave the treatment working less well than it should, and can also change the side effects you feel."
+    },
+    "af12eda9736791b5": {
+      "headline": "More active drug stays in you, raising side effect risk.",
+      "detail": "One route in your body breaks this medicine down more slowly than usual, so more active drug builds up in your blood. Another route works faster, changing more of it into the related form your body makes, which can affect how it works and what side effects appear."
+    },
+    "19d214c165402e20": {
+      "headline": "You convert this medicine into its related form faster than usual.",
+      "detail": "One of your body's routes for handling this medicine works normally, but the other works faster than usual. That shifts the balance between the two forms of the drug in your blood, which can change how well it works and what side effects you feel."
+    },
+    "062a7dc63fe23e09": {
+      "headline": "This medicine builds up strongly, making side effects much more likely.",
+      "detail": "Your body is very slow at breaking this medicine down into weaker forms, so much more active drug stays in your blood. A second route works faster than usual, shifting the balance between the drug's two forms and affecting response and side effects."
+    },
+    "afdda7133e4c8202": {
+      "headline": "Your body clears this medicine quickly, so it may not work.",
+      "detail": "You break this medicine down into weaker forms faster than most people, leaving too little active drug in your blood. You also convert more of it into the related form your body makes, which can further change how it works and what side effects you feel."
+    },
+    "c3fb60e0b69f8eeb": {
+      "headline": "Your body changes this medicine too fast, so it may not work well.",
+      "detail": "This type of antidepressant is broken down and turned into another form more quickly in your body than in most people. That can leave too little of the original medicine to help you, and it may change the side effects you feel."
+    },
+    "97ac743aac97fed4": {
+      "headline": "Your body breaks this medicine down slowly, so more builds up.",
+      "detail": "Because it is cleared more slowly than in most people, more of the active medicine stays in your blood. Higher amounts make side effects more likely."
+    },
+    "6fce7c5d9146f072": {
+      "headline": "Your body handles this medicine in the usual way.",
+      "detail": "This type of antidepressant is broken down at a normal speed in your body, so your genetic result does not point to any change."
+    },
+    "e4549f9bf13614e9": {
+      "headline": "Your body breaks this medicine down very slowly, so it builds up a lot.",
+      "detail": "Much more of the active medicine stays in your blood than in most people. That makes side effects considerably more likely."
+    },
+    "d6b318709447b178": {
+      "headline": "Your genetic result does not lead to any specific guidance here.",
+      "detail": "There is no information linking this result to a change in how the medicine works for you."
+    },
+    "a1e05beb018b08dd": {
+      "headline": "You clear this medicine slowly, but the usual starting dose still fits.",
+      "detail": "Your body turns fluvoxamine into weaker forms more slowly than most people, so more of it can stay in your blood. Higher amounts may make side effects more likely."
+    },
+    "efbe952113542c3c": {
+      "headline": "There is no specific guidance for your result with this medicine.",
+      "detail": "No information is available linking your genetic result to how this medicine affects you."
+    },
+    "6c191d22d0a15d2b": {
+      "headline": "This medicine can badly harm your bone marrow.",
+      "detail": "Your body handles this type of drug in a way that puts you at greatly increased risk of losing white blood cells and having your bone marrow stop making enough blood cells. Without lowering the dose, this can be deadly."
+    },
+    "621b370f70b29aa7": {
+      "headline": "Your body makes the usual helpful amount of the active form.",
+      "detail": "Tamoxifen has to be changed by your body into the substance that does the work, and yours does this normally. Medicines that block that change would lower it."
+    },
+    "1961fd732169da06": {
+      "headline": "Your body handles this medicine at a normal speed.",
+      "detail": "This type of antidepressant is broken down as expected in your body, so the usual starting amount fits you."
+    },
+    "3e73e945ad915ba1": {
+      "headline": "You are very unlikely to get yellowing from this medicine.",
+      "detail": "Your body clears the yellow pigment bilirubin at a normal rate. Some people stop atazanavir because their eyes and skin turn yellow, but your genetic result makes that unlikely."
+    },
+    "f8099a456af68286": {
+      "headline": "You are unlikely to get yellowing from this medicine.",
+      "detail": "Your body clears the yellow pigment bilirubin a bit more slowly than usual, but only slightly. Some people stop atazanavir because their eyes and skin turn yellow, and your genetic result makes that unlikely for you."
+    },
+    "40e95142e8d62475": {
+      "headline": "Your body clears atazanavir's waste product very slowly, so yellowing is likely.",
+      "detail": "A liver enzyme that normally clears away a yellow pigment called bilirubin barely works in you. With atazanavir, that pigment builds up and can turn your skin and eyes yellow — common enough that many people end up stopping the drug."
+    },
+    "b7df47bf938132b7": {
+      "headline": "Your body breaks down atomoxetine very fast, so usual doses may not work.",
+      "detail": "You clear this medicine quickly, so the amount in your blood at a standard dose is likely too low to help. Checking a blood level can show whether more is needed."
+    },
+    "ec66f8e20686aadd": {
+      "headline": "You break down atomoxetine at a typical speed; it may work less well.",
+      "detail": "Compared with people who clear this drug slowly, you are less likely to get a good response, and people like you more often stop the medicine because it isn't helping. A blood level can show if the amount in your body is too low."
+    },
+    "8b1bc6840fb14c71": {
+      "headline": "You break down atomoxetine at a typical speed; it may work less well.",
+      "detail": "Compared with people who clear this drug slowly, you are less likely to get a good response, and people like you more often stop it because it isn't helping. A blood level can show if the amount in your body is too low."
+    },
+    "e603015739612300": {
+      "headline": "You may have slightly more atomoxetine in your blood than most people.",
+      "detail": "Your body breaks this medicine down a bit more slowly, though it's unclear whether that matters much. You may still be more likely to stop the medicine than people who break it down very slowly."
+    },
+    "9cdae29d275ab198": {
+      "headline": "You break down atomoxetine slowly, so levels in your blood run higher.",
+      "detail": "Because the medicine leaves your body more slowly than usual, more of it builds up. You may still be more likely to stop treatment than people who break it down very slowly, and a blood level can show whether the amount is right for you."
+    },
+    "6c1aca7cb4e6eb56": {
+      "headline": "You break down atomoxetine slowly, so levels in your blood run higher.",
+      "detail": "The medicine leaves your body more slowly than usual, so more of it builds up. You may still be more likely to stop treatment than people who break it down very slowly."
+    },
+    "5559a58a00453cb4": {
+      "headline": "You break down atomoxetine very slowly, so much more stays in your body.",
+      "detail": "Higher levels can mean more side effects, but for people who can tolerate it, ADHD symptoms often improve more. People like you usually end up needing a lower dose than others."
+    },
+    "16546c2cda92eb92": {
+      "headline": "Your body breaks down atomoxetine very fast, so usual doses may not work.",
+      "detail": "You clear this medicine quickly, so a standard dose is likely to leave too little in your blood to help. A blood test can show how much is actually there."
+    },
+    "6770f0abf9319d36": {
+      "headline": "You break down atomoxetine at a typical speed; it may work less well.",
+      "detail": "Compared with people who clear this drug slowly, you are less likely to respond well, and people like you more often stop it because it isn't helping. A blood level can show if the amount in your body is too low."
+    },
+    "dfd98fd1fdd4cad0": {
+      "headline": "You may have slightly more atomoxetine in your blood than most people.",
+      "detail": "Your body breaks this medicine down a little more slowly, though it's unclear whether that makes a real difference. You may still be more likely to stop the medicine than people who break it down very slowly."
+    },
+    "b97b1aeeadaebe54": {
+      "headline": "There isn't enough evidence to say your result changes hydrocodone.",
+      "detail": "Studies haven't shown a clear effect of this gene result on how much pain relief you get or on side effects from hydrocodone."
+    },
+    "35c60288e0ab5f1a": {
+      "headline": "Your body clears this medicine more slowly than usual.",
+      "detail": "Because of your genetic result, atomoxetine breaks down slowly, so more of it stays in your blood than in most people. This can mean stronger effects, and people with your result may be more likely to stop the medicine than those who break it down even more slowly."
+    },
+    "aebda4c1a533598c": {
+      "headline": "Your body clears this medicine more slowly than usual.",
+      "detail": "Atomoxetine is broken down slowly in your body, so more of it builds up in your blood than in most people. People with your result may be more likely to stop the medicine than those who break it down even more slowly."
+    },
+    "dc494a6415a82491": {
+      "headline": "Your body breaks this medicine down very slowly.",
+      "detail": "Much more atomoxetine stays in your blood than in most people, which can bring on more side effects. If you do tolerate it, your ADHD symptoms may improve more than usual, and you are likely to need a lower final dose."
+    },
+    "5f94a51975eeb9ed": {
+      "headline": "Your genes give you a typical response to this statin.",
+      "detail": "The amount of atorvastatin in your blood is expected to be normal, and your chance of muscle problems is the same as most people's."
+    },
+    "149147d595e1f974": {
+      "headline": "More of this statin stays in your blood than usual.",
+      "detail": "Your body moves atorvastatin out of the blood more slowly than most people's, so levels build up higher. That can raise the chance of muscle pain or muscle damage, especially at higher doses."
+    },
+    "70480718bf27d6c7": {
+      "headline": "Much more of this statin stays in your blood.",
+      "detail": "Your body clears atorvastatin from the blood much more slowly than most people's, so levels build up higher than normal. That can raise the chance of muscle pain or muscle damage."
+    },
+    "73428a02825d090c": {
+      "headline": "Your body handles this medicine in the usual way.",
+      "detail": "You break azathioprine down normally, so the active forms build up to typical levels. Your chance of low blood cell counts from this medicine is the same as most people's."
+    },
+    "a6454f1c42b3d739": {
+      "headline": "You break this medicine down more slowly than most people.",
+      "detail": "More of the active form builds up in your blood cells than usual. This raises the chance that the medicine will lower your white blood cells and slow down your bone marrow, where blood cells are made."
+    },
+    "5cb7324aa6f53e42": {
+      "headline": "You break this medicine down more slowly than most people.",
+      "detail": "More of the active form builds up in your blood cells than usual. This raises the chance that the medicine will lower your white blood cells and slow down your bone marrow, where blood cells are made."
+    },
+    "90aa2412566d2ad9": {
+      "headline": "You break this medicine down slowly, raising your risk further.",
+      "detail": "More of the active form builds up in your blood cells than usual, so the medicine is more likely to lower your white blood cells and slow your bone marrow. Your result carries a higher risk than for people with only one slow-working gene change."
+    },
+    "52a560fa8de7e1d7": {
+      "headline": "Your TPMT gene handles this medicine in the usual way.",
+      "detail": "You break azathioprine down normally, so the active forms build up to typical levels. Your chance of low blood cell counts from this medicine is the same as most people's."
+    },
+    "d3ed9e5baf60757a": {
+      "headline": "Your TPMT gene breaks this medicine down more slowly.",
+      "detail": "More of the active form builds up in your blood cells than usual. This raises the chance that the medicine will lower your white blood cells and slow down your bone marrow, where blood cells are made."
+    },
+    "f76fccbf082de328": {
+      "headline": "Your NUDT15 result shows an ordinary response to this medicine.",
+      "detail": "Your body handles this type of medicine in the usual way. Your risk of it lowering your white blood cells or affecting your bone marrow is no higher than normal."
+    },
+    "3d377ac6c0dc4f11": {
+      "headline": "Your NUDT15 result means a higher risk of low blood counts.",
+      "detail": "Your body cannot clear the active parts of this medicine as well as most people, so more of it builds up. That makes it more likely to lower your white blood cells and slow down your bone marrow, where blood cells are made."
+    },
+    "c861d49f278c4c67": {
+      "headline": "Your genetic test did not give a clear answer for this medicine.",
+      "detail": "The results could not show how well your body handles this type of medicine, because neither your TPMT nor your NUDT15 result could be worked out. Without knowing this, it is not possible to predict whether you are at higher risk of side effects."
+    },
+    "9f3acde4e2954974": {
+      "headline": "Your genes raise your risk of severe skin and body reactions.",
+      "detail": "Because of your genetic result, your immune system is more likely to react badly to this medicine. These reactions can involve serious blistering rashes and widespread illness."
+    },
+    "cfa6205b6b1571ec": {
+      "headline": "Your genes show an ordinary risk of serious skin reactions.",
+      "detail": "Your genetic result does not raise the chance that your immune system will react badly to this medicine with a severe skin reaction."
+    },
+    "da3a22ba80d79fff": {
+      "headline": "Your genes raise your risk of a severe skin reaction.",
+      "detail": "One of your genetic results makes your immune system more likely to react to this medicine with a serious blistering rash that can damage large areas of skin."
+    },
+    "5019e06e821ea0ee": {
+      "headline": "Both genetic results raise your risk of severe skin reactions.",
+      "detail": "Two of your genetic results make your immune system more likely to react badly to this medicine. The reactions can include serious blistering rashes and widespread illness affecting the whole body."
+    },
+    "49a0093247e6e818": {
+      "headline": "Your genes raise your risk of a severe skin reaction.",
+      "detail": "Your genetic result makes your immune system more likely to react to this medicine with a serious blistering rash that can damage large areas of skin."
+    },
+    "120d454ccbdd38dc": {
+      "headline": "Your genes show an ordinary risk of serious skin reactions.",
+      "detail": "Your genetic result does not raise the chance of your immune system reacting badly to this medicine with a severe rash or a whole-body reaction."
+    },
+    "f9efaa7cff89cebb": {
+      "headline": "Your genes raise your risk of severe skin and body reactions.",
+      "detail": "Because of your genetic result, your immune system is more likely to react badly to this medicine. These reactions can involve serious blistering rashes and illness affecting the whole body."
+    },
+    "582dbd7c9446b5af": {
+      "headline": "Your genes show an ordinary risk of serious skin reactions.",
+      "detail": "Neither of your genetic results raises the chance of your immune system reacting badly to this medicine with a severe rash or a whole-body reaction."
+    },
+    "6c95148d4904cf5f": {
+      "headline": "Your genes raise your risk of severe skin and body reactions.",
+      "detail": "Because of your genetic result, your immune system is more likely to react badly to this medicine. These reactions can involve serious blistering rashes and illness affecting the whole body, and they usually begin with a change in the skin."
+    },
+    "faa5769cbb83284b": {
+      "headline": "Your genes raise your risk of severe skin reactions to this drug.",
+      "detail": "People with your genetic result are more likely to develop serious skin and whole-body reactions to carbamazepine, including blistering rashes. These reactions can be dangerous, so any new rash matters."
+    },
+    "d0286943dd3571d6": {
+      "headline": "Your genes raise the risk of serious skin reactions to carbamazepine.",
+      "detail": "With your genetic result, carbamazepine is more likely to cause severe rashes or blistering skin reactions. These reactions almost always show up within the first three months of taking it regularly, so a long stretch of past use without a rash is meaningful."
+    },
+    "c0f725e44d80d801": {
+      "headline": "Your genes raise the risk of a severe blistering skin reaction.",
+      "detail": "With your genetic result, carbamazepine is more likely to trigger a serious skin reaction called SJS/TEN. This usually appears within about four weeks of steady use, and nearly always within three months, so past use without a rash is meaningful."
+    },
+    "ac950b2656e2c9db": {
+      "headline": "Your genes raise the risk of severe skin reactions to carbamazepine.",
+      "detail": "With your genetic result, carbamazepine is more likely to cause serious skin and whole-body reactions, including blistering rashes. These usually appear within about four weeks of steady use, and nearly always within three months, so past use without a rash is meaningful."
+    },
+    "2b77fede8e92938b": {
+      "headline": "Your genes raise the risk of a severe blistering skin reaction.",
+      "detail": "With your genetic result, carbamazepine is more likely to trigger a serious skin reaction called SJS/TEN. It usually appears within about four weeks of steady use, and nearly always within three months, so past use without a rash is meaningful."
+    },
+    "2177dde401c91788": {
+      "headline": "Your genes raise the risk of serious skin reactions to carbamazepine.",
+      "detail": "With your genetic result, carbamazepine is more likely to cause severe rashes or blistering skin reactions. These reactions almost always appear within the first three months of regular use, so a long stretch of past use without a rash is meaningful."
+    },
+    "81f1b9321ed791a0": {
+      "headline": "Your body breaks this medicine down as expected.",
+      "detail": "Your genetic result is the usual one, so the drug should build up and clear from your body at a typical rate. Standard dosing is expected to work normally for you."
+    },
+    "752c3d2e8016b0f1": {
+      "headline": "Your body breaks this medicine down slightly more slowly than usual.",
+      "detail": "The difference is small, so the amount of drug in your blood should stay close to what is expected with normal dosing."
+    },
+    "de0610a5e6ea1239": {
+      "headline": "Your body clears this medicine slowly, so more builds up.",
+      "detail": "Because it is broken down at a reduced rate, the level of drug in your blood can be higher than usual. That makes side effects, such as raised blood pressure or effects on your kidneys, more likely."
+    },
+    "37a0b399ba6a9901": {
+      "headline": "Your body clears this medicine very slowly, so much more builds up.",
+      "detail": "The drug is broken down much more slowly than usual and stays in your body far longer, so blood levels can climb high. That makes side effects more likely and possibly more severe, including effects on blood pressure and the kidneys."
+    },
+    "9884800bbad9a651": {
+      "headline": "Your body breaks this medicine down very quickly, weakening its effect.",
+      "detail": "The drug is turned into less active forms faster than usual, so less of it stays in your blood. Lower levels mean the medicine is less likely to help your symptoms."
+    },
+    "716b3442784575c3": {
+      "headline": "Your body breaks this medicine down faster than usual.",
+      "detail": "The drug is turned into less active forms more quickly, so the amount in your blood is lower than normal. That makes it less likely to work as well as expected."
+    },
+    "c94e2ad9f864fa61": {
+      "headline": "Your body breaks this medicine down at the usual speed.",
+      "detail": "Your genes work the way they do for most people, so this medicine should behave in your body the way it is expected to."
+    },
+    "be7a8045613e9b7b": {
+      "headline": "Your body breaks this medicine down more slowly than usual.",
+      "detail": "Because it clears out slowly, more of it can build up in your blood. Higher amounts make side effects more likely."
+    },
+    "cc9cc7018e5877a0": {
+      "headline": "Your body breaks this medicine down very slowly.",
+      "detail": "It takes your body much longer than most people's to turn this medicine into weaker forms, so more of it stays in your blood. That higher level makes side effects more likely."
+    },
+    "9bbdf58c28de207c": {
+      "headline": "Your body clears this medicine much too slowly.",
+      "detail": "More of the active medicine stays in your blood, which makes side effects more likely. Your body also changes it into its other forms differently, which can alter how well it works and what side effects you get."
+    },
+    "42f20306613d2977": {
+      "headline": "Your body handles this medicine unusually on two fronts.",
+      "detail": "One part of your body clears it slowly, so more active medicine builds up and side effects become more likely. Another part changes it into a different form faster than usual, which can affect how well it works and what side effects you feel."
+    },
+    "91ed157acc05f7cb": {
+      "headline": "One step in breaking down this medicine is very slow.",
+      "detail": "Your body converts this medicine into its other form far more slowly than most people. That change can affect both how well it works for you and the side effects you get."
+    },
+    "1834be26210291f8": {
+      "headline": "Your body converts this medicine to another form too fast.",
+      "detail": "You change it into a different active form more quickly than most people. That shift can affect how well the medicine works and what side effects you feel."
+    },
+    "a6beab99e3697292": {
+      "headline": "Your body clears this medicine far too slowly.",
+      "detail": "Much more of the active medicine stays in your blood than in most people, which makes side effects more likely. A second step in breaking it down is also slower than usual."
+    },
+    "b88f433f960191a5": {
+      "headline": "Your body clears this medicine far too slowly.",
+      "detail": "Much more of the active medicine builds up in your blood than in most people, and that makes side effects more likely. The other step in handling it works normally."
+    },
+    "371c1f9d871d4704": {
+      "headline": "Both ways your body breaks this medicine down are very slow.",
+      "detail": "Much more of the active medicine stays in your blood, which makes side effects more likely. The change into its other form is also greatly slowed, which can affect how well it works and what side effects you get."
+    },
+    "92ef3a18c72cfc5a": {
+      "headline": "Your body clears this medicine slowly but converts it quickly.",
+      "detail": "Much more of the active medicine stays in your blood, making side effects more likely. At the same time you turn it into a different form faster than usual, which can change how well it works and what side effects you feel."
+    },
+    "b5717bbd3631a3e0": {
+      "headline": "Your body breaks this medicine down too fast to work well.",
+      "detail": "Less of the active medicine stays in your blood than in most people, so it is more likely the treatment will not work. A second step in handling it is slower than usual."
+    },
+    "45a5a3538de5adc9": {
+      "headline": "Your body clears this medicine too fast for it to work well.",
+      "detail": "You break clomipramine down quickly into forms that do much less in your body. That means the level of active medicine in your blood is likely to stay too low to help you."
+    },
+    "700724c6cf76ab8f": {
+      "headline": "Your body clears this medicine too fast, and handles it unusually.",
+      "detail": "One part of your body breaks clomipramine down very quickly into forms that do much less. At the same time, another step that changes the medicine is much slower than usual, so the mix of substances in your blood can be hard to predict and the drug may not work."
+    },
+    "70574ffa9ab51a7f": {
+      "headline": "Your body clears this medicine too fast at every step.",
+      "detail": "You break clomipramine down quickly into forms that do much less in your body, so levels of the active medicine are likely to be too low. Another step also runs faster than usual, changing the balance of substances in your blood, which can affect how well it works or what side effects you get."
+    },
+    "beaff797a1de7728": {
+      "headline": "Your body turns codeine into morphine much too fast.",
+      "detail": "Codeine only works after your body changes it into morphine. Yours does this far more than usual, so morphine can build up to a dangerous level."
+    },
+    "e092db2daee87eec": {
+      "headline": "Your body switches this medicine on more strongly than usual.",
+      "detail": "Clopidogrel only works after your body activates it, and yours makes more of the active form. Your platelets are less likely to clump, and this has not been linked to extra bleeding."
+    },
+    "96ee9f1632d97eaf": {
+      "headline": "Your body switches this medicine on normally or a bit more.",
+      "detail": "Clopidogrel only works after your body activates it, and yours does this at a normal or higher rate. Your platelets respond normally or a little more, and this has not been linked to extra bleeding."
+    },
+    "00251eca6f4dfc22": {
+      "headline": "Your body switches this medicine on as expected.",
+      "detail": "Clopidogrel only works after your body activates it, and yours does this at the usual rate. Your platelets respond the way they normally would."
+    },
+    "cc5cf6c1bdedd2b4": {
+      "headline": "Your body switches this medicine on less than it should.",
+      "detail": "Clopidogrel only works after your body activates it, and yours makes less of the active form. Your platelets stay stickier, which raises your risk of a heart attack or stroke."
+    },
+    "f314ef1558d6b471": {
+      "headline": "Your body switches this medicine on less than it should.",
+      "detail": "Clopidogrel only works after your body activates it, and yours makes less of the active form. Your platelets stay stickier, which raises your risk of a heart attack or stroke."
+    },
+    "822f2fc851ddd87d": {
+      "headline": "Your body barely switches this medicine on at all.",
+      "detail": "Clopidogrel only works after your body activates it, and yours makes far less of the active form. Your platelets stay stickier, which raises your risk of a heart attack or stroke."
+    },
+    "5e26abb54465287b": {
+      "headline": "Your body switches this medicine on more strongly than usual.",
+      "detail": "Clopidogrel only works after your body activates it, and yours makes more of the active form. Your platelets are less likely to clump, and this has not been linked to extra bleeding."
+    },
+    "e28d9ca27d90cb3d": {
+      "headline": "Your body switches this medicine on normally or a bit more.",
+      "detail": "Clopidogrel only works after your body activates it, and yours does this at a normal or higher rate. Your platelets respond normally or a little more, and this has not been linked to extra bleeding."
+    },
+    "72dc5cc74c4a65b5": {
+      "headline": "Your body makes less of the active form of this medicine.",
+      "detail": "Because less of the drug is switched on, your platelets stay stickier while you are taking it. That means a higher chance of problems with your heart or blood vessels, including stroke."
+    },
+    "5decfa8ae35b7043": {
+      "headline": "This medicine could suddenly destroy your red blood cells.",
+      "detail": "Your red blood cells lack the protection they normally need to cope with this drug. Taking it carries a high risk of them breaking apart quickly, which is dangerous."
+    },
+    "c6818908273e353c": {
+      "headline": "This medicine could sharply worsen your ongoing red cell breakdown.",
+      "detail": "Your red blood cells are already breaking down over time. This drug carries a high risk of making that breakdown much worse, quite suddenly."
+    },
+    "e69567ff744f16fd": {
+      "headline": "Your body switches on more of this medicine than usual.",
+      "detail": "More of the drug is turned into its active form, so your platelets are less sticky while you take it."
+    },
+    "1dda30c4c863ba77": {
+      "headline": "Your body switches on a normal or higher amount of this medicine.",
+      "detail": "The drug is turned into its active form as expected, or a bit more than expected, so your platelets are as sticky as usual or less so."
+    },
+    "11e33325aa4d7619": {
+      "headline": "Your body makes less of the active form of this medicine.",
+      "detail": "Because less of the drug is switched on, your platelets stay stickier while you take it. That raises the chance of heart and blood vessel problems, including stroke."
+    },
+    "f598f193dccac84d": {
+      "headline": "Your body barely switches this medicine on at all.",
+      "detail": "Very little of the drug is turned into its active form, so your platelets stay much stickier than they should. This clearly raises the chance of serious heart and blood vessel problems, including stroke."
+    },
+    "2c7ee1ed8f361c06": {
+      "headline": "Your body turns less of this medicine into its pain reliever.",
+      "detail": "Codeine only eases pain after your body changes it into morphine. Yours makes less morphine than usual, so the pain relief may be weaker."
+    },
+    "a5cb67740b4f6ed6": {
+      "headline": "Your body handles this medicine in the usual way.",
+      "detail": "Codeine only eases pain after your body changes it into morphine, and yours makes the expected amount."
+    },
+    "1335412743bd1d52": {
+      "headline": "Your body makes almost no pain relief from this medicine.",
+      "detail": "Codeine only works once your body turns it into morphine, and yours barely does that. So the medicine is unlikely to ease your pain."
+    },
+    "dfc0b8367ca5621d": {
+      "headline": "Your risk of sudden red blood cell breakdown is unclear.",
+      "detail": "Your genetic result on its own does not show how well your red blood cells are protected. A blood test that measures the enzyme's actual activity is what shows where you stand."
+    },
+    "bb757939a9f1bc32": {
+      "headline": "Certain anesthetics could trigger a dangerous reaction in you.",
+      "detail": "Some gas anesthetics and one muscle relaxant used in surgery can set off a severe reaction in your body, with a sharp rise in temperature. Other anesthetics work just as well and are widely available."
+    },
+    "5a8140eb3144e57c": {
+      "headline": "Your result cannot rule out a dangerous reaction to some anesthetics.",
+      "detail": "Only one of the two genes linked to malignant hyperthermia was looked at, and about half of people who have had this reaction have no known genetic cause. Malignant hyperthermia is a serious reaction that some people get from certain anesthetic gases or a muscle relaxant used in surgery."
+    },
+    "d54a389691d95ead": {
+      "headline": "You have a higher chance of a serious reaction to certain anesthetics.",
+      "detail": "Your genes mean that some anesthetic gases and the muscle relaxant succinylcholine can trigger malignant hyperthermia, a dangerous reaction where your body temperature and muscles go out of control. Other anesthetics that do not cause this are widely available and work well."
+    },
+    "ab17877d47b88edc": {
+      "headline": "Your results cannot rule out a dangerous reaction to some anesthetics.",
+      "detail": "About half of people who have had malignant hyperthermia have no known genetic cause, so a result like yours does not prove you are safe. Malignant hyperthermia is a serious reaction that some people get from certain anesthetic gases or a muscle relaxant used in surgery."
+    },
+    "399d8b9d42fa1920": {
+      "headline": "You have a higher chance of a serious reaction to certain anesthetics.",
+      "detail": "Your genes mean that some anesthetic gases and the muscle relaxant succinylcholine can trigger malignant hyperthermia, a dangerous reaction where your body temperature and muscles go out of control. Other anesthetics that do not cause this are widely available and work well."
+    },
+    "712463cb07cb69c9": {
+      "headline": "You have a higher chance of a serious reaction to certain anesthetics.",
+      "detail": "A change in your RYR1 gene means some anesthetic gases and the muscle relaxant succinylcholine can trigger malignant hyperthermia, a dangerous reaction where your body temperature and muscles go out of control. Other anesthetics that do not cause this are widely available and work well."
+    },
+    "622fd8ed585c2c9e": {
+      "headline": "You have a higher chance of a serious reaction to certain anesthetics.",
+      "detail": "A change in your CACNA1S gene means some anesthetic gases and the muscle relaxant succinylcholine can trigger malignant hyperthermia, a dangerous reaction where your body temperature and muscles go out of control. Other anesthetics that do not cause this are widely available and work well."
+    },
+    "8aaf3484eee05a58": {
+      "headline": "Your result cannot rule out a dangerous reaction to some anesthetics.",
+      "detail": "Only the CACNA1S gene was looked at, not RYR1, and about half of people who have had malignant hyperthermia have no known genetic cause. Malignant hyperthermia is a serious reaction that some people get from certain anesthetic gases or a muscle relaxant used in surgery."
+    },
+    "0fa1e478d1c8bd1c": {
+      "headline": "Your body clears this medicine too fast, so it may not work.",
+      "detail": "You break this type of antidepressant down into weaker forms more quickly than most people. That leaves less active medicine in your blood, so the treatment may not do its job."
+    },
+    "678c4f6cb225acd3": {
+      "headline": "Your body makes less of the part of tramadol that relieves pain.",
+      "detail": "Tramadol has to be changed by your body into an active form before it works well. You make less of that active form, so it may give you less pain relief."
+    },
+    "97c0e5d21b4016f6": {
+      "headline": "Your body handles this medicine in the usual way.",
+      "detail": "You break this type of antidepressant down at a normal speed, so the usual amount of active medicine should end up in your blood."
+    },
+    "f65ceac653b2b4f2": {
+      "headline": "Your body breaks this medicine down slowly, so more builds up.",
+      "detail": "You turn this type of antidepressant into weaker forms more slowly than most people. More active medicine stays in your blood, which makes side effects more likely."
+    },
+    "b7e22a5c29fe9b37": {
+      "headline": "Your body barely breaks this medicine down, so side effects are likely.",
+      "detail": "You turn this type of antidepressant into weaker forms much more slowly than most people. A lot of active medicine builds up in your blood, which raises the chance of side effects."
+    },
+    "35a98432787ec3c7": {
+      "headline": "Your body clears this medicine faster, so less stays active.",
+      "detail": "Your genes mean this stomach-acid medicine is broken down quicker than usual, so the level in your blood stays lower. That makes it more likely a normal dose would not work well enough."
+    },
+    "45a7543ad8ad17e4": {
+      "headline": "Your body clears this medicine faster than usual.",
+      "detail": "Because it is broken down quicker, the amount in your blood is lower than in most people. A usual dose may not be enough to fully do its job, especially for stubborn conditions."
+    },
+    "3b5fcbaf2cfcf1e2": {
+      "headline": "Your body handles this medicine at a normal speed.",
+      "detail": "You break this medicine down as expected, so the level in your blood is typical. Compared with people who break it down slowly, there is a somewhat greater chance a standard dose does not work well enough."
+    },
+    "c6d2b594232dc982": {
+      "headline": "Your body likely breaks this medicine down slowly.",
+      "detail": "That means more of it probably stays in your blood than in most people. It is likely to work well, and side effects may also be more likely."
+    },
+    "e174464eb89f38f6": {
+      "headline": "Your body breaks this medicine down slowly, so levels build up.",
+      "detail": "More of the medicine stays in your blood than in most people. It has a greater chance of working, and also a greater chance of causing side effects."
+    },
+    "673cc990d06ba77f": {
+      "headline": "This medicine builds up strongly in you; side effects are likely.",
+      "detail": "Your body is much slower than usual at clearing this medicine and at changing it into its other forms. The active drug can reach high levels in your blood, which raises the chance of side effects and may change how you respond."
+    },
+    "255d7d25b6021fc3": {
+      "headline": "You handle this medicine unusually, changing its levels and effects.",
+      "detail": "One part of your body clears this medicine more slowly than usual, so the active drug can build up and cause side effects. At the same time, another part changes it faster than usual, which can also affect how well it works and what side effects you get."
+    },
+    "5432f212ca1b8d7d": {
+      "headline": "Your body turns tramadol into its pain-relieving form as expected.",
+      "detail": "Tramadol only works after your body changes it into an active form. Yours does this at the usual rate."
+    },
+    "5786089bdb3b78de": {
+      "headline": "Your body is much slower at changing this medicine's form.",
+      "detail": "You break this medicine down normally overall, but you are much slower at converting it into its other form. That difference can change how well it works and how many side effects you feel."
+    },
+    "c8c9823aee816641": {
+      "headline": "Your body converts this medicine faster than usual.",
+      "detail": "Overall you break this medicine down normally, but you change it into its other form more quickly than most people. That can affect how well it works and what side effects you get."
+    },
+    "5f096ba9c9bc0ca3": {
+      "headline": "This medicine builds up a lot in your blood.",
+      "detail": "Your body is much slower than usual at clearing this medicine, so more of the active drug stays in you. That makes side effects more likely."
+    },
+    "4fada4d3254c39df": {
+      "headline": "This medicine builds up a lot in your blood.",
+      "detail": "Your body is much slower than usual at breaking this medicine down into weaker forms, so high levels of the active drug can stay in you. That raises the chance of side effects."
+    },
+    "ca6f90a5fcd471c3": {
+      "headline": "Your body breaks this medicine down very slowly.",
+      "detail": "Much more of the active drug builds up in your blood than usual, which makes side effects more likely. Your body also changes it into its other form much less than normal, which can affect how well it works and what side effects you get."
+    },
+    "2c63c7a9e07fb234": {
+      "headline": "Your body clears this medicine very slowly, so it builds up.",
+      "detail": "Much more of the active drug stays in your blood than usual, making side effects more likely. At the same time, your body turns it into its second form faster than normal, which can also change how it works or what side effects you feel."
+    },
+    "b760601fce120167": {
+      "headline": "Your body breaks this medicine down faster than usual.",
+      "detail": "Less of the active drug stays in your blood, so the medicine is more likely not to work for you. A separate step in breaking it down is slower than normal."
+    },
+    "016c32d9663111b5": {
+      "headline": "Your body handles this medicine in the usual way.",
+      "detail": "The enzyme that breaks this medicine down works normally, so your risk of harmful side effects is the same as most people's."
+    },
+    "1b65da6bfd0984af": {
+      "headline": "Your body breaks this medicine down too quickly.",
+      "detail": "Less of the active drug stays in your blood, so the medicine is more likely not to work well for you. The other step in breaking it down happens at a normal speed."
+    },
+    "9e6392666544672f": {
+      "headline": "One breakdown step is fast, another is very slow.",
+      "detail": "Your body clears the active drug quickly, so less stays in your blood and the medicine may not work. A second breakdown step is much slower than usual, which can also change how it works and what side effects you get."
+    },
+    "90c85aaf1033c85d": {
+      "headline": "Your body breaks this medicine down more slowly than usual.",
+      "detail": "The enzyme that clears this drug works at only part of its usual strength, so the medicine builds up. That raises your risk of severe, and even life-threatening, side effects."
+    },
+    "f86305b3c94946b2": {
+      "headline": "Your body breaks this medicine down faster than usual.",
+      "detail": "Less of the active drug stays in your blood, so the medicine is more likely not to work for you. Your body also turns it into its second form more than usual, which can change how it works or what side effects you feel."
+    },
+    "34b5a4da023e1f0a": {
+      "headline": "Your body handles this statin normally.",
+      "detail": "The amount of medicine in your blood is typical, and your chance of muscle problems is the same as most people's."
+    },
+    "b23d87b3ae1a5a82": {
+      "headline": "Your body handles this statin normally, based on one gene.",
+      "detail": "The gene that was read shows a usual amount of medicine in your blood. A second gene that can affect this statin could not be worked out from your test."
+    },
+    "8665923d89dc509f": {
+      "headline": "Your body handles this statin normally, based on one gene.",
+      "detail": "The gene that was tested shows a usual amount of medicine in your blood. A second gene that can affect this statin was not tested."
+    },
+    "50416a51d48d6b09": {
+      "headline": "Your body clears this medicine slightly faster than usual.",
+      "detail": "The lowest level of the drug in your blood between doses is a little lower than in most people."
+    },
+    "799c900a6d4b4754": {
+      "headline": "Your body handles efavirenz the way most people's bodies do.",
+      "detail": "You break this medicine down at a normal speed, so the usual amount stays in your blood. Nothing about your genes changes how this drug is expected to work for you."
+    },
+    "b0fedbe777cb424f": {
+      "headline": "Efavirenz builds up more in your body than usual.",
+      "detail": "You break this medicine down more slowly than most people, so more of it stays in your blood between doses. That raises your chance of side effects involving your brain and nerves, such as trouble with sleep, mood or thinking."
+    },
+    "4b4467f34e162266": {
+      "headline": "Efavirenz builds up a lot in your body.",
+      "detail": "You break this medicine down much more slowly than most people, so far more of it stays in your blood. That strongly raises your chance of side effects involving your brain and nerves, and these can be bad enough that people stop the treatment."
+    },
+    "0deb3c3285aad536": {
+      "headline": "You clear this medicine only partly, so it can build up dangerously.",
+      "detail": "The enzyme that breaks down this type of medicine works at well under half its normal speed in your body. That means the drug can reach harmful levels and cause severe, even life-threatening, side effects."
+    },
+    "4583438af7e40b86": {
+      "headline": "Your body cannot break this medicine down at all.",
+      "detail": "The enzyme that normally clears this drug is completely missing in you, so it builds up to very dangerous levels. This can cause severe, even fatal, harm."
+    },
+    "f47c491dbfdf623f": {
+      "headline": "Your body cannot break this medicine down at all.",
+      "detail": "The enzyme that normally clears this drug does not work in you, so it would build up to very dangerous levels. This can cause severe, even fatal, harm."
+    },
+    "3d5b5668ea19ed6a": {
+      "headline": "More fluvastatin stays in your body than usual.",
+      "detail": "You break this medicine down more slowly than most people, so it builds up in your blood. Higher levels can raise your chance of muscle pain and muscle damage."
+    },
+    "3e9b83a08dcda2f7": {
+      "headline": "Fluvastatin builds up in your body more than in most people.",
+      "detail": "You break this medicine down much more slowly than others, so more of it stays in your blood. That can raise your chance of muscle pain and muscle damage."
+    },
+    "c25cc7c51dd26557": {
+      "headline": "Your body handles this medicine the usual way.",
+      "detail": "You break it down at a normal speed, so the expected amount stays in your blood. Your genes don't change how this drug is likely to work for you."
+    },
+    "a4adfecf3d25e8ff": {
+      "headline": "Slightly more fluvastatin stays in your body than usual.",
+      "detail": "You break this medicine down a bit more slowly than most people, so somewhat more of it stays in your blood. At usual amounts your chance of muscle problems is like anyone else's, but higher amounts could raise it."
+    },
+    "b2a376221a474576": {
+      "headline": "Fluvastatin can build up in you, especially at higher amounts.",
+      "detail": "Your body moves this medicine out of the blood more slowly than some people do. At lower amounts your chance of muscle pain or muscle damage is the usual one, but it can go up as the amount rises."
+    },
+    "4db5b304705c3921": {
+      "headline": "Fluvastatin builds up strongly in your body.",
+      "detail": "You break this medicine down much more slowly than most people, so a lot more of it stays in your blood. That can raise your chance of muscle pain and muscle damage."
+    },
+    "0b61989f839a9a8a": {
+      "headline": "Much more fluvastatin builds up in you, raising muscle-problem risk.",
+      "detail": "Your body both breaks this medicine down more slowly and clears it from your blood more slowly than usual. That means higher levels stay in you, which can make painful muscle damage more likely."
+    },
+    "f354a08ce5cb176b": {
+      "headline": "Much more fluvastatin builds up in you, raising muscle-problem risk.",
+      "detail": "Your body breaks this medicine down more slowly than usual, and it also moves out of your blood more slowly. The extra amount left in you can make painful muscle damage more likely."
+    },
+    "8d7f32c7a63a1eb9": {
+      "headline": "Fluvastatin leaves your blood slowly, so more stays in you.",
+      "detail": "Your body breaks this medicine down at a normal speed, but it clears it out of your blood more slowly than usual. At low amounts the chance of muscle problems is the usual one, but larger daily amounts could raise it."
+    },
+    "5be007cd13b2ef97": {
+      "headline": "Fluvastatin leaves your blood slowly, so more stays in you.",
+      "detail": "The test could not tell how quickly you break this medicine down, but it did show that your body clears it from your blood more slowly than usual. At low amounts the chance of muscle problems is the usual one, but larger daily amounts could raise it."
+    },
+    "da9797b734434f83": {
+      "headline": "Your body handles fluvastatin in the usual way.",
+      "detail": "The part of your result that was readable shows this medicine moves out of your blood at a normal speed, with the usual chance of muscle problems. The test could not tell how quickly you break the medicine down."
+    },
+    "67d38c5968c9529a": {
+      "headline": "No genetic information is available for this medicine.",
+      "detail": "There is nothing in your result that says how your body handles fluvastatin."
+    },
+    "c8a922146588c983": {
+      "headline": "Fluvastatin leaves your blood very slowly, so more stays in you.",
+      "detail": "Your body clears this medicine out of your blood much more slowly than usual, so more of it builds up. At lower amounts the chance of muscle problems is the usual one, but larger daily amounts could raise it. The test could not tell how quickly you break the medicine down."
+    },
+    "d20da20272e94070": {
+      "headline": "You break fluvastatin down slowly, so more stays in you.",
+      "detail": "Your body breaks this medicine down more slowly than usual, so higher levels stay in your blood. That can make painful muscle damage more likely. The test could not tell how quickly the medicine moves out of your blood."
+    },
+    "e7ee0b2c3be4f86e": {
+      "headline": "You break fluvastatin down slowly, so more stays in you.",
+      "detail": "Your body breaks this medicine down more slowly than usual, so higher levels stay in your blood, which can make painful muscle damage more likely. There is no result available for how quickly the medicine moves out of your blood."
+    },
+    "1ae7b9f55f0b4641": {
+      "headline": "Fluvastatin leaves your blood slowly, so more stays in you.",
+      "detail": "Your body clears this medicine out of your blood more slowly than usual, so more of it builds up. At low amounts the chance of muscle problems is the usual one, but larger daily amounts could raise it. There is no result for how quickly you break the medicine down."
+    },
+    "ad8605965b53ad75": {
+      "headline": "Your body handles fluvastatin in the usual way.",
+      "detail": "This medicine moves out of your blood at a normal speed, with the usual chance of muscle problems. There is no result available for how quickly you break the medicine down."
+    },
+    "3099103dcda498e8": {
+      "headline": "Fluvastatin leaves your blood very slowly, so more stays in you.",
+      "detail": "Your body clears this medicine out of your blood much more slowly than usual, so more of it builds up. At lower amounts the chance of muscle problems is the usual one, but larger daily amounts could raise it. There is no result for how quickly you break the medicine down."
+    },
+    "2e54ea943544c891": {
+      "headline": "Your body clears fluvastatin slowly, so more builds up.",
+      "detail": "Because of your CYP2C9 result, more of the drug stays in your blood than in most people. That raises the chance of muscle pain or muscle damage. Your SLCO1B1 result could not be worked out from the testing."
+    },
+    "68ebbcb9aab65588": {
+      "headline": "Your body clears fluvastatin slowly, so more builds up.",
+      "detail": "Because of your CYP2C9 result, more of the drug stays in your blood than in most people, which raises the chance of muscle pain or muscle damage. There is no SLCO1B1 result available for you."
+    },
+    "7770c973d86147cf": {
+      "headline": "There isn't enough information for your gene result and this medicine.",
+      "detail": "Your body breaks down some medicines much faster than usual, but no studies show what that means for this one. Because the evidence is missing, no guidance can be given."
+    },
+    "8f370185cf1783db": {
+      "headline": "Your body breaks down fluvoxamine very slowly.",
+      "detail": "Much more of the medicine stays in your blood than in most people. Higher levels make side effects more likely."
+    },
+    "aae541da4d833e51": {
+      "headline": "Your body clears hydralazine quickly, so usual doses may not work.",
+      "detail": "You break this medicine down fast, so less of it stays in your blood. That means it may not lower your blood pressure as well as it would for other people."
+    },
+    "a0ec5d36ed6ca3b9": {
+      "headline": "Your body clears hydralazine fairly quickly, so it may work less well.",
+      "detail": "You break this medicine down faster than some people, so less of it stays in your blood. That can make it less effective at the usual amounts."
+    },
+    "adb4f12659c43b04": {
+      "headline": "Your body breaks down hydralazine slowly, so more builds up.",
+      "detail": "Higher levels stay in your blood than in most people. That can make the medicine work more strongly, but also raises the chance of side effects, including a lupus-like illness caused by the drug."
+    },
+    "0fa3a5901e6936a6": {
+      "headline": "There is no genetic guidance for this combination.",
+      "detail": "Nothing in your result changes what is known about this medicine. No recommendation can be made."
+    },
+    "983c33e66ce638a2": {
+      "headline": "Your gene result barely changes how hydrocodone works for you.",
+      "detail": "There is very little evidence that your result affects the amount of drug in your blood or how you feel. Any difference is expected to be small."
+    },
+    "20204d8e3ce2df2e": {
+      "headline": "Your body turns hydrocodone into its active form normally.",
+      "detail": "The gene that changes hydrocodone into the pain-relieving substance works as expected in you."
+    },
+    "c7090a711b13fe82": {
+      "headline": "Your body makes less of hydrocodone's active form.",
+      "detail": "You change less of the drug into the substance that relieves pain. It isn't clear whether this means less pain relief or fewer side effects for you."
+    },
+    "68a9e33dd3c58a94": {
+      "headline": "Your body breaks down imipramine very slowly, so it builds up.",
+      "detail": "Much more active drug stays in your blood than in most people. High levels make side effects more likely."
+    },
+    "8a9bdeade6bafbb9": {
+      "headline": "This medicine could suddenly make your red blood cells break apart.",
+      "detail": "Your red blood cells are already being destroyed faster than normal, and this drug can make that happen much faster and much more suddenly. That is a serious risk for you."
+    },
+    "88edb5ba0776658c": {
+      "headline": "Your body breaks this medicine down too fast to work well.",
+      "detail": "One of your liver's enzymes clears this drug quickly, so too little of the active medicine stays in your blood. That makes it more likely the treatment simply will not work for you. A second enzyme works more slowly than usual, which pulls the level in the other direction, so the amount in your blood is hard to predict."
+    },
+    "509e120b99df7564": {
+      "headline": "Your body clears this medicine faster, but the effect is unclear.",
+      "detail": "You break metoprolol down more quickly than most people, so less of it stays in your blood. It is not known whether this actually changes your heart rate, your blood pressure, or how well the medicine works."
+    },
+    "72055c3391ce5621": {
+      "headline": "This medicine builds up in your body, raising side effect risk.",
+      "detail": "Your body breaks this drug down very slowly, so much more of the active medicine stays in your blood than normal. Higher levels make unwanted effects more likely."
+    },
+    "91acd838733b8114": {
+      "headline": "Your body breaks this medicine down too fast for it to work.",
+      "detail": "You clear this drug more quickly than most people, so less of the active medicine stays in your blood. That makes it more likely the treatment will not help you."
+    },
+    "6fc80bb2d52bd59a": {
+      "headline": "This medicine builds up strongly in your body, raising side effect risk.",
+      "detail": "Both of the liver enzymes that handle this drug work very slowly in you, so much more of the active medicine stays in your blood. The drug is also changed into its other form far less than usual, which can affect both how well it works and what side effects you get."
+    },
+    "e91794f7d6ea8084": {
+      "headline": "This medicine builds up in your body, raising side effect risk.",
+      "detail": "Your body breaks this drug down more slowly than most people's, so more of the active medicine stays in your blood. It is also changed into its other form much less than usual, which can affect how well it works and what side effects you feel."
+    },
+    "ae95bfcf78944931": {
+      "headline": "Your body handles this medicine in the usual way.",
+      "detail": "The enzyme that breaks down metoprolol works normally in you, so the amount in your blood should be what is expected."
+    },
+    "02fd00336bcfae7a": {
+      "headline": "One enzyme is very slow, so levels can run high.",
+      "detail": "Your body handles this drug normally in one way, but a second enzyme works very slowly, so the medicine is changed into its other form much less than usual. That can affect both how well it works and how likely side effects are."
+    },
+    "a23e03841f89903e": {
+      "headline": "Two enzymes work in opposite ways, so levels are unpredictable.",
+      "detail": "One of your enzymes clears this drug quickly, which can leave too little active medicine to help you. Another works very slowly and changes the drug into its other form much less than usual, which can affect how it works and what side effects you get."
+    },
+    "4010926cda87353e": {
+      "headline": "This medicine builds up in your body, raising side effect risk.",
+      "detail": "One of your enzymes breaks this drug down very slowly, so much more active medicine stays in your blood. Another works faster than usual, changing the drug into its other form more than normal, which can also affect how it works and what side effects you feel."
+    },
+    "265970bf7f921f5b": {
+      "headline": "Your body clears this medicine slowly, so side effects are likelier.",
+      "detail": "One of your enzymes breaks this drug down more slowly than usual, so more of the active medicine stays in your blood. Another works faster than normal, changing the drug into its other form more than usual, which can also affect how it works and what side effects you get."
+    },
+    "4765e8819e39485c": {
+      "headline": "Your body handles this medicine in a slightly unusual way.",
+      "detail": "You break down imipramine at a normal overall rate, but you turn it into its follow-on form faster than most people. That shift in the balance of the two forms can change how well it works for you or what side effects you feel."
+    },
+    "17c8fa5bf2c63289": {
+      "headline": "Your body breaks this medicine down too fast to work well.",
+      "detail": "Imipramine is cleared from your blood more quickly than usual, so too little of the active medicine may be left to help you. You also turn more of it into its follow-on form, which can change how you respond or what side effects you notice."
+    },
+    "3d46392973577fd5": {
+      "headline": "This medicine carries a middling risk of harming your red blood cells.",
+      "detail": "Your red blood cells can break apart faster than they should while you are taking it. If that happens, you can become anemic, which is why blood counts are watched closely."
+    },
+    "a882c0e44ebbe935": {
+      "headline": "Your cystic fibrosis gene change is not one this drug helps.",
+      "detail": "Ivacaftor only works on certain CFTR gene changes listed on the drug's label, and yours is not among them. There is no reason to expect it to help you."
+    },
+    "6c6405b314fe5a17": {
+      "headline": "Your cystic fibrosis gene change is one this drug can help.",
+      "detail": "Ivacaftor works on certain CFTR gene changes listed on the drug's label, and you have one of them. The usual dosing on the label applies to you."
+    },
+    "1fa90eb12697110e": {
+      "headline": "More lovastatin builds up in your body than usual.",
+      "detail": "Your body clears lovastatin more slowly than most people's, so levels in your blood run higher. Higher levels raise the chance of muscle pain and muscle damage."
+    },
+    "f1df3f63aef548eb": {
+      "headline": "Lovastatin builds up strongly in your body, raising muscle risk.",
+      "detail": "Your body clears lovastatin much more slowly than most people's, so far more of it stays in your blood. That makes muscle pain and muscle damage more likely."
+    },
+    "f9f4e649a719795e": {
+      "headline": "You clear meloxicam a little more slowly than most people.",
+      "detail": "The difference is small, so the usual starting amount still fits you. As with anyone, the smallest helpful amount for the shortest time is the aim."
+    },
+    "29fae7e6501f09d0": {
+      "headline": "You clear meloxicam noticeably slowly, so it can build up.",
+      "detail": "Because the medicine leaves your body more slowly than usual, more of it stays in your blood. Higher levels make side effects, such as effects on your blood pressure and kidneys, more likely."
+    },
+    "d414f2507fedc004": {
+      "headline": "Meloxicam stays in your body far too long.",
+      "detail": "Your body breaks this medicine down very slowly, so it lingers and builds up to high levels in your blood. That makes side effects both more likely and potentially more severe."
+    },
+    "b9316265951c4c3d": {
+      "headline": "Your body handles this medicine the usual way.",
+      "detail": "You process mercaptopurine like most people do, so the active form builds up in your blood cells at a normal level. Your risk of the medicine lowering your white blood cells or bone marrow activity is the usual one."
+    },
+    "e6fb301bc1fe6f2a": {
+      "headline": "You build up more of this medicine's active form than usual.",
+      "detail": "Your body breaks mercaptopurine down more slowly, so higher amounts of the active form collect inside your red blood cells. That raises your chance of low white blood cell counts and a slowed-down bone marrow."
+    },
+    "798ffeb3520be572": {
+      "headline": "Your body clears this drug more slowly than usual.",
+      "detail": "A gene change means more of the active drug builds up in your blood cells. That raises your chance of low white blood cell counts and a slowed-down bone marrow at a standard dose."
+    },
+    "286790774fb14fc2": {
+      "headline": "Your body clears this drug very poorly, so toxicity risk is high.",
+      "detail": "Far too much of the active drug builds up, which greatly raises the chance of dangerously low blood counts and a bone marrow that stops making enough cells. Without a much smaller dose, this can be life-threatening."
+    },
+    "d77950bf9e19b065": {
+      "headline": "Your body barely clears this drug, so toxicity risk is high.",
+      "detail": "Extremely high amounts of the active drug build up in your blood cells, greatly raising the chance of dangerously low white blood cell counts and a bone marrow that stops making enough cells. Without a much smaller dose, this can be life-threatening."
+    },
+    "732aef5912907e98": {
+      "headline": "Your body clears this drug slowly, more so than usual.",
+      "detail": "Changes in two genes mean higher levels of the active drug build up in your blood cells. Your chance of low white blood cell counts and a slowed-down bone marrow is higher than with just one gene change."
+    },
+    "22bb4dc06cd6742d": {
+      "headline": "Your body handles this drug in the usual way.",
+      "detail": "The levels of the active drug in your blood cells follow the normal pattern. Your chance of low white blood cell counts or a slowed-down bone marrow is the usual one."
+    },
+    "bc7fcd32b82a0bb7": {
+      "headline": "Your body clears this drug more slowly than usual.",
+      "detail": "A change in the TPMT gene means more of the active drug builds up in your blood cells. That raises your chance of low white blood cell counts and a slowed-down bone marrow at a standard dose."
+    },
+    "d251111b9aaacbee": {
+      "headline": "Your NUDT15 result shows the usual handling of this drug.",
+      "detail": "Your chance of low white blood cell counts or a slowed-down bone marrow from this medicine is the normal one."
+    },
+    "b2e0a53c98004b63": {
+      "headline": "Your NUDT15 gene raises your risk of low blood counts.",
+      "detail": "Because of this gene change, the drug affects your blood-making cells more strongly. That raises your chance of low white blood cell counts and a slowed-down bone marrow at a standard dose."
+    },
+    "b8c6707565cb551e": {
+      "headline": "Your G6PD result means little risk of sudden red cell breakdown.",
+      "detail": "With this medicine, your chance of your red blood cells suddenly breaking apart is low."
+    },
+    "fb768e6a656a42bb": {
+      "headline": "You break this drug down slowly, but it rarely matters.",
+      "detail": "Levels of the medicine in your blood run higher than usual. Even so, this doesn't seem to make a meaningful difference to your heart rate, blood pressure, or how you do overall."
+    },
+    "832c2955d6ab287e": {
+      "headline": "You break this drug down very slowly, so levels get high.",
+      "detail": "Much more of the medicine stays in your blood, which lowers your heart rate and blood pressure more than expected. What that means for your health in the long run isn't clear."
+    },
+    "fb8330c3c91078fa": {
+      "headline": "This medicine carries a high risk of red blood cell breakdown.",
+      "detail": "Your ongoing red blood cell breakdown is very likely to get suddenly worse with this drug."
+    },
+    "bec0265276b465fe": {
+      "headline": "Your red blood cells may break apart with this medicine.",
+      "detail": "Your G6PD result isn't clear enough to know your risk. A blood test that measures how well the G6PD enzyme is actually working can show whether your red blood cells are likely to be damaged by this medicine."
+    },
+    "b247f3b19bd08a09": {
+      "headline": "Your body clears this medicine too fast, so it may not work.",
+      "detail": "You break this type of antidepressant down into weaker forms much more quickly than most people. That leaves too little active medicine in your blood for it to help your symptoms."
+    },
+    "63c676d151df2069": {
+      "headline": "Your body handles this medicine the usual way.",
+      "detail": "You break this type of antidepressant down at a normal speed, so the usual amount of active medicine should end up in your blood."
+    },
+    "935706d5ce2fb3c9": {
+      "headline": "Your body breaks this medicine down slowly, so more builds up.",
+      "detail": "You turn this type of antidepressant into weaker forms more slowly than most people. More active medicine stays in your blood, which makes side effects more likely."
+    },
+    "6ea9457fd3325783": {
+      "headline": "Your body barely breaks this medicine down, so side effects are likely.",
+      "detail": "You turn this type of antidepressant into weaker forms far more slowly than most people. A lot of active medicine builds up in your blood, which raises the chance of side effects."
+    },
+    "1b4d7b6d517323fc": {
+      "headline": "This medicine could cause a severe, dangerous skin reaction in you.",
+      "detail": "Your genetic result means your immune system is much more likely to react to oxcarbazepine with a serious blistering rash that damages the skin."
+    },
+    "254f961a849177fd": {
+      "headline": "You have a higher risk of a severe skin reaction to oxcarbazepine.",
+      "detail": "This kind of serious blistering rash usually shows up within about the first month, and nearly always within three months of steady use. If you have already taken oxcarbazepine regularly for longer than that with no skin problems, that risk period has largely passed."
+    },
+    "8b1d70b3b23ccf39": {
+      "headline": "You clear paroxetine so fast it may not help you.",
+      "detail": "Your body breaks paroxetine into weaker forms much more quickly than most people, so too little active medicine stays in your blood to do its job. It isn't clear whether paroxetine slowing down your own enzyme changes this."
+    },
+    "0269b8281d00a3f3": {
+      "headline": "Tramadol may not relieve your pain.",
+      "detail": "Tramadol only works well once your body changes it into a stronger pain-relieving form. Your body makes very little of that form, so the pain relief may be weak."
+    },
+    "6f55d4087793e414": {
+      "headline": "Your body handles paroxetine the usual way.",
+      "detail": "You break paroxetine down into weaker forms at a normal speed. Paroxetine can slow down the enzyme that does this over time, more so at higher doses and once the medicine has built up."
+    },
+    "9cf8bc76ac24778f": {
+      "headline": "Your body breaks paroxetine down slowly, so more builds up.",
+      "detail": "You clear paroxetine more slowly than most people, especially at the start or at lower doses, so more of it stays in your blood and side effects become more likely. Paroxetine can also slow your enzyme down further as the medicine builds up."
+    },
+    "d4702176f51d0a4d": {
+      "headline": "Your body barely breaks paroxetine down, so it builds up.",
+      "detail": "You clear paroxetine much more slowly than most people, so higher amounts stay in your blood and side effects become more likely. Paroxetine's own slowing effect on this enzyme makes little difference for you."
+    },
+    "07a07177fc35fbfc": {
+      "headline": "Your body handles this medicine in the usual way.",
+      "detail": "Your genes suggest you break phenytoin down at a normal speed, so the usual dose amounts fit you. Your genetic result also does not rule out a rare but serious skin reaction, so that risk still needs watching like it would for anyone."
+    },
+    "e98f84cbe0e07622": {
+      "headline": "Your body breaks this down slightly slower, but that rarely matters.",
+      "detail": "Your genes mean phenytoin clears from you a little more slowly, though this does not seem to cause more side effects. Your genetic result also does not rule out a rare but serious skin reaction, so that risk still needs watching like it would for anyone."
+    },
+    "a9c7f9e38c0ff464": {
+      "headline": "Your body breaks this medicine down more slowly than usual.",
+      "detail": "Because phenytoin leaves your body slowly, it can build up to higher levels in your blood, which makes side effects more likely. Your genetic result also does not rule out a rare but serious skin reaction, so that risk still needs watching like it would for anyone."
+    },
+    "5cc72b5c213734de": {
+      "headline": "Your body breaks this medicine down much more slowly.",
+      "detail": "Phenytoin clears from your blood slowly, so it can build up to high levels and make side effects more likely. Your genetic result also does not rule out a rare but serious skin reaction, so that risk still needs watching like it would for anyone."
+    },
+    "f6a5a3be3e57cf08": {
+      "headline": "Your genes raise your risk of a dangerous skin reaction.",
+      "detail": "You carry a gene version linked to a rare but very serious skin and blistering illness that phenytoin can trigger. Your body breaks the medicine down at a normal speed, but the skin risk is the main concern, and two similar medicines carry it too."
+    },
+    "b1c3a362a722605b": {
+      "headline": "Your genes raise your risk of a dangerous skin reaction.",
+      "detail": "You carry a gene version linked to a rare but very serious skin and blistering illness that phenytoin can trigger. You also break the medicine down a little slowly, though that alone does not seem to cause more side effects; the skin risk is the main concern, and two similar medicines carry it too."
+    },
+    "46ab20d9f0d4672a": {
+      "headline": "Your genes raise your risk of a dangerous skin reaction.",
+      "detail": "You carry a gene version linked to a rare but very serious skin and blistering illness that phenytoin can trigger. You also break the medicine down slowly, so it can build up and cause more side effects. Two similar medicines carry the same skin risk."
+    },
+    "9f5ffe285bea121a": {
+      "headline": "Your genes raise your risk of a dangerous skin reaction.",
+      "detail": "You carry a gene version linked to a rare but very serious skin and blistering illness that phenytoin can trigger. Two similar medicines carry the same risk for you."
+    },
+    "b2d57c46d173ccb8": {
+      "headline": "Nothing in your results changes how this medicine suits you.",
+      "detail": "Your genetic results do not point to any unusual handling of phenytoin by your body. A negative result also does not rule out a rare but serious skin reaction, so that risk still needs watching like it would for anyone."
+    },
+    "240b417ce84faa61": {
+      "headline": "Your genes raise the risk of a serious skin reaction.",
+      "detail": "You carry a gene version linked to a rare but very serious skin and blistering illness that phenytoin can trigger. This reaction almost always shows up within the first few weeks to three months of taking it, so having already taken phenytoin steadily for longer than that without skin problems is meaningful. Your body breaks the medicine down at a normal speed."
+    },
+    "c385596038c8f4f7": {
+      "headline": "Your genes raise the risk of a serious skin reaction.",
+      "detail": "You carry a gene version linked to a rare but very serious skin and blistering illness that phenytoin can trigger, and it almost always appears within the first few weeks to three months of steady use. You also break the medicine down slightly slowly, though that does not seem to cause more side effects."
+    },
+    "04ef58d19dfcac18": {
+      "headline": "Your genes raise the risk of a serious skin reaction.",
+      "detail": "You carry a gene version linked to a rare but very serious skin and blistering illness that phenytoin can trigger, and it almost always appears within the first few weeks to three months of steady use. Your body also breaks the medicine down slowly, so it can build up in your blood and make side effects more likely."
+    },
+    "ec930c11369f9ab1": {
+      "headline": "Your body turns tramadol into its strong form too fast.",
+      "detail": "Tramadol only works after your body changes it into another substance. Yours makes much more of that active substance than usual, so the drug can build up to harmful levels."
+    },
+    "bc51434ff90662ef": {
+      "headline": "You have a raised risk of a severe skin reaction from phenytoin.",
+      "detail": "Your genes make it more likely that phenytoin triggers a serious rash that damages the skin. These reactions usually start within the first few weeks to three months of taking it, so having already taken it for longer than that without a rash is meaningful."
+    },
+    "624b94d66597d2e1": {
+      "headline": "Your body clears sertraline a bit more slowly than usual.",
+      "detail": "Sertraline is broken down into weaker forms more slowly in your body than in most people, so more of it can stay in your blood and side effects are more likely."
+    },
+    "9a6c0536dd8e9f72": {
+      "headline": "Your body breaks this medicine down slowly, so it builds up.",
+      "detail": "One of your liver's breakdown steps works at a reduced rate, leaving more of the drug in your blood for longer. That makes unwanted effects more likely."
+    },
+    "d0cdfb0d3559ab4d": {
+      "headline": "More pitavastatin stays in your blood than usual.",
+      "detail": "Your body moves pitavastatin out of the bloodstream less well than normal, so levels run higher. Higher levels raise the chance of muscle pain and muscle damage."
+    },
+    "dc0fea5726fc0a24": {
+      "headline": "Much more pitavastatin stays in your blood than usual.",
+      "detail": "Your body clears pitavastatin from the bloodstream far less well than most people, so levels run high. That raises the chance of muscle pain and muscle damage."
+    },
+    "3bb539b8576744af": {
+      "headline": "More pravastatin stays in your blood than usual.",
+      "detail": "Your body moves pravastatin out of the bloodstream less well than normal, so levels run higher. At doses up to 40mg a day, the chance of muscle problems is still the usual one."
+    },
+    "dae021ddd8dd6665": {
+      "headline": "Much more pravastatin stays in your blood than usual.",
+      "detail": "Your body clears pravastatin from the bloodstream much less well than most people, so levels run high. At doses up to 40mg a day, the chance of muscle problems is still the usual one."
+    },
+    "42534f06ccf01d1c": {
+      "headline": "More rosuvastatin stays in your blood than usual.",
+      "detail": "Your body moves rosuvastatin out of the bloodstream less well than normal, so levels run higher. At doses up to 20mg, the chance of muscle problems is still the usual one."
+    },
+    "de71ad77106313ae": {
+      "headline": "Primaquine can rapidly destroy your red blood cells.",
+      "detail": "Your red blood cells lack their usual protection, so the normal daily two-week course of primaquine carries a high risk of them breaking apart suddenly, causing severe anaemia."
+    },
+    "3f48a0d771476fd9": {
+      "headline": "Primaquine can sharply worsen the ongoing breakdown of your red blood cells.",
+      "detail": "Your red blood cells are already being destroyed faster than normal, and primaquine carries a high risk of making that much worse."
+    },
+    "594577aa7a1150f8": {
+      "headline": "Much more rosuvastatin stays in your blood than usual.",
+      "detail": "Your body clears rosuvastatin from the bloodstream much less well than most people, so levels run high. This also means a stronger cholesterol-lowering effect, and the risk of muscle problems at these levels is not known."
+    },
+    "34b33d53b213aa76": {
+      "headline": "More rosuvastatin stays in your body than usual.",
+      "detail": "Both of the proteins that normally move this medicine out of your blood work less well, so higher levels build up. That means a stronger cholesterol-lowering effect, and it isn't known whether muscle problems become more likely."
+    },
+    "1e89046b2bf7ef11": {
+      "headline": "More rosuvastatin than usual stays in your blood.",
+      "detail": "One of the proteins that clears this medicine from your body works less well, so levels build up more than normal. At the lower doses, the chance of muscle problems is still the usual one."
+    },
+    "6ab798a3f8a711c6": {
+      "headline": "More rosuvastatin builds up in your body than usual.",
+      "detail": "One of the proteins that moves this medicine out of your blood doesn't work as well, so levels run higher and the cholesterol-lowering effect is stronger. Whether that raises the chance of muscle problems isn't known."
+    },
+    "036f50de97c0485d": {
+      "headline": "More rosuvastatin stays in your body than usual.",
+      "detail": "The proteins that normally clear this medicine from your blood work less well, so levels build up. That gives a stronger cholesterol-lowering effect, and the chance of muscle problems at lower doses is still the usual one."
+    },
+    "bd1c97c8225d21f3": {
+      "headline": "Slightly more rosuvastatin stays in your body than usual.",
+      "detail": "One of the proteins that clears this medicine works less well, so levels run a bit higher and the cholesterol-lowering effect is stronger. It isn't known whether this makes muscle problems more likely."
+    },
+    "f97910338506efba": {
+      "headline": "Your body handles rosuvastatin in the usual way.",
+      "detail": "The proteins that move this medicine out of your blood work normally, so the amount in your body is typical. Your chance of muscle problems is the usual one."
+    },
+    "48fa38348f3130f8": {
+      "headline": "More rosuvastatin stays in your body than usual.",
+      "detail": "The proteins that clear this medicine from your blood work less well, so levels run higher and the cholesterol-lowering effect is stronger. At higher doses there may be a greater chance of muscle problems."
+    },
+    "b66ca16e43c34770": {
+      "headline": "More rosuvastatin stays in your body than usual.",
+      "detail": "One of the proteins that clears this medicine from your blood works less well, so levels run higher. At higher doses there may be a greater chance of muscle problems; the result for the other gene wasn't available."
+    },
+    "4021f121b588998a": {
+      "headline": "Your body handles rosuvastatin in the usual way.",
+      "detail": "The transporter protein tested works normally, so the amount of medicine in your body is typical and your chance of muscle problems is the usual one. The result for the other gene wasn't available."
+    },
+    "2fe34468fe735064": {
+      "headline": "Slightly more rosuvastatin stays in your body than usual.",
+      "detail": "One of the proteins that clears this medicine works less well, so levels run higher and the cholesterol-lowering effect is stronger. It isn't known whether muscle problems become more likely, and the other gene result couldn't be worked out."
+    },
+    "e6cbd42d03f527d3": {
+      "headline": "The gene result available shows usual handling of rosuvastatin.",
+      "detail": "The transporter protein tested works normally, so the amount of medicine in your body is typical and your chance of muscle problems is the usual one. The other gene result couldn't be worked out from your test."
+    },
+    "650b7e3daa3ad4fb": {
+      "headline": "More rosuvastatin builds up in your body than usual.",
+      "detail": "One of the proteins that moves this medicine out of your blood works less well, so levels run higher and the cholesterol-lowering effect is stronger. Whether muscle problems become more likely isn't known, and the other gene result couldn't be worked out."
+    },
+    "a26f8c0e9f1c41f6": {
+      "headline": "More of this statin stays in your body than usual.",
+      "detail": "Your genes mean rosuvastatin builds up to higher levels than in most people, so its cholesterol-lowering effect may be stronger. It isn't known whether this changes your chance of muscle problems. Your other relevant gene result wasn't available."
+    },
+    "eab268b25cc53f79": {
+      "headline": "Your body handles this statin in the usual way.",
+      "detail": "Rosuvastatin reaches the levels expected in most people, and your chance of muscle problems from it is typical. Your other relevant gene result wasn't available."
+    },
+    "1a2d9a425640412e": {
+      "headline": "Much more of this statin stays in your body than usual.",
+      "detail": "Your genes mean rosuvastatin builds up to higher levels than in most people, so its cholesterol-lowering effect may be stronger. It isn't known whether this changes your chance of muscle problems. Your other relevant gene result wasn't available."
+    },
+    "d9fbb1659f9d7818": {
+      "headline": "Your body handles sertraline close to the usual way.",
+      "detail": "One of your genes breaks sertraline down slightly faster than usual, while another breaks it down more slowly, so overall the levels in your body are close to typical."
+    },
+    "1a0d30196e1f5b78": {
+      "headline": "More of this statin stays in your body than usual.",
+      "detail": "Your genes mean rosuvastatin builds up to higher levels than in most people. At lower doses your chance of muscle problems is still the usual one. Your other relevant gene result wasn't available."
+    },
+    "7ea367d81ba019ca": {
+      "headline": "Your body breaks sertraline down slightly faster than usual.",
+      "detail": "One of your genes clears sertraline a little more quickly than in most people, but the difference is small."
+    },
+    "096d6e7866bc6f09": {
+      "headline": "Your body breaks sertraline down faster than usual.",
+      "detail": "Both of your genes clear sertraline more quickly than in most people, so less of it may stay in your body and the usual dose may not work as well for you."
+    },
+    "2067bbafdac687fa": {
+      "headline": "Your body breaks sertraline down slightly faster than usual.",
+      "detail": "Both of your genes clear sertraline a little more quickly than in most people, so slightly less of it may stay in your body."
+    },
+    "ea763473f5bbe6d9": {
+      "headline": "Your body handles sertraline close to the usual way.",
+      "detail": "One of your genes clears sertraline normally, and the other clears it just slightly faster than in most people."
+    },
+    "7c8be3c42ac52c80": {
+      "headline": "Your body handles sertraline close to the usual way.",
+      "detail": "One of your genes breaks sertraline down more slowly than usual, while the other breaks it down slightly faster, so the levels balance out near typical."
+    },
+    "4e83013194744d0d": {
+      "headline": "Your body breaks sertraline down much more slowly than usual.",
+      "detail": "One of your genes clears sertraline far more slowly, so more of it can build up in your blood, which can make side effects more likely. Your other gene clears it slightly faster than usual."
+    },
+    "d518319cb1c923f5": {
+      "headline": "Your body handles this medicine in the usual way.",
+      "detail": "Your genetic result shows you break this medicine down at the normal speed, like most people do."
+    },
+    "6edc5896fd1a3ed2": {
+      "headline": "Your body breaks sertraline down faster than usual.",
+      "detail": "One of the liver enzymes that turns sertraline into weaker forms works more quickly in you than in most people. Overall, your handling of this medicine is still considered normal."
+    },
+    "5f1ed5e0e07e2eca": {
+      "headline": "Your body breaks sertraline down slightly faster than usual.",
+      "detail": "A liver enzyme that turns sertraline into weaker forms works a little faster in you than in most people. Overall, your handling of this medicine is still considered normal."
+    },
+    "36ba786779ff3dd7": {
+      "headline": "Your body handles sertraline the usual way.",
+      "detail": "The liver enzymes that turn sertraline into weaker forms work at a typical speed in you, so the medicine builds up and clears out as expected."
+    },
+    "465b1663cf991537": {
+      "headline": "Your body breaks sertraline down more slowly than usual.",
+      "detail": "A liver enzyme that turns sertraline into weaker forms works less well in you, so the medicine tends to stay in your body longer than in most people."
+    },
+    "d5dd8548ad18de68": {
+      "headline": "Your body breaks sertraline down very slowly, so it builds up.",
+      "detail": "A liver enzyme that turns sertraline into weaker forms barely works in you. That means more of the drug stays in your blood, which makes side effects more likely."
+    },
+    "717c9902b3167910": {
+      "headline": "Your body handles sertraline the usual way.",
+      "detail": "The liver enzyme looked at here works at a typical speed in you, so sertraline is broken down and cleared as expected."
+    },
+    "7b891ea4b201bbf4": {
+      "headline": "Your body breaks sertraline down more slowly than usual.",
+      "detail": "A liver enzyme that turns sertraline into weaker forms works less well in you, so the medicine stays in your body longer than it does for most people."
+    },
+    "db74914a419d7bf3": {
+      "headline": "One enzyme works faster, another slower, roughly balancing out.",
+      "detail": "One of your liver enzymes turns sertraline into weaker forms more quickly than usual, while another does it more slowly than usual."
+    },
+    "893c279e24dc6e56": {
+      "headline": "Both enzymes break sertraline down more slowly than usual.",
+      "detail": "Two liver enzymes that turn sertraline into weaker forms work less well in you, so the medicine stays in your body longer than in most people."
+    },
+    "fe5b44cf26b402f5": {
+      "headline": "Sertraline clears very slowly from your body and builds up.",
+      "detail": "One liver enzyme that turns sertraline into weaker forms barely works in you, and a second one is also slow. More of the drug stays in your blood, which makes side effects more likely."
+    },
+    "14b682023910552d": {
+      "headline": "Your body breaks sertraline down more slowly than usual.",
+      "detail": "A liver enzyme that turns sertraline into weaker forms works less well in you, so more of the medicine stays in your body for longer."
+    },
+    "4efb0a8b6c384c35": {
+      "headline": "Your body breaks sertraline down more slowly than usual.",
+      "detail": "A liver enzyme that turns sertraline into weaker forms is less active in you, so the medicine lingers in your body longer than it does in most people."
+    },
+    "cae3c3f10f6cda1d": {
+      "headline": "Your body clears sertraline much more slowly than usual.",
+      "detail": "One of the liver enzymes that breaks down sertraline works far less well in you, so more of the drug can build up in your blood. Higher levels make side effects more likely."
+    },
+    "c7b7e17f7a44b4e2": {
+      "headline": "Your body clears sertraline much more slowly than usual.",
+      "detail": "One liver enzyme handles sertraline normally, but the main one works far less well in you, so the drug can build up in your blood. Higher levels make side effects more likely."
+    },
+    "12252cd2d1e6a112": {
+      "headline": "Sertraline still builds up because your main enzyme works poorly.",
+      "detail": "One of your liver enzymes breaks sertraline down faster than usual, but the main enzyme for this drug works far less well, so overall the drug can build up in your blood. Higher levels make side effects more likely."
+    },
+    "c7e055d524af98e3": {
+      "headline": "Sertraline still builds up because your main enzyme works poorly.",
+      "detail": "One of your liver enzymes breaks sertraline down slightly faster than usual, but the main enzyme for this drug works far less well, so the drug can still build up. Higher levels make side effects more likely."
+    },
+    "175b2e6a505319ec": {
+      "headline": "Both enzymes that clear sertraline work slowly in you.",
+      "detail": "One liver enzyme breaks sertraline down less well than usual, and the main one works far less well, so the drug can build up in your blood. Higher levels make side effects more likely."
+    },
+    "7ad00a5ee0120ef5": {
+      "headline": "Both enzymes that clear sertraline barely work in you.",
+      "detail": "The two liver enzymes that normally break sertraline down are both working very poorly, so the drug can build up strongly in your blood. Higher levels make side effects more likely."
+    },
+    "c24732340653f381": {
+      "headline": "Your body breaks sertraline down a bit faster than usual.",
+      "detail": "One of your liver enzymes clears sertraline more quickly than in most people. This is not expected to change how treatment is started."
+    },
+    "c79a18f297e68061": {
+      "headline": "Your body breaks sertraline down slightly faster than usual.",
+      "detail": "One of your liver enzymes clears sertraline a little more quickly than in most people. This small difference is not expected to change how treatment is started."
+    },
+    "02821c556486e86b": {
+      "headline": "Your body handles sertraline the usual way.",
+      "detail": "Your liver enzymes break sertraline down into weaker substances at a normal speed, so the drug should behave as expected in you."
+    },
+    "ff8fd72a500665df": {
+      "headline": "Your body breaks sertraline down more slowly than usual.",
+      "detail": "One of your liver enzymes works less well than in most people, so sertraline leaves your body more slowly and levels can rise over time."
+    },
+    "909df7d4a4304b25": {
+      "headline": "Your body clears sertraline much more slowly than usual.",
+      "detail": "One of your liver enzymes works very poorly at breaking sertraline down, so more of it can build up in your blood. Higher levels make side effects more likely."
+    },
+    "378fdc4da4e38d66": {
+      "headline": "Your body breaks sertraline down more slowly than usual.",
+      "detail": "One of your liver enzymes works less well than in most people, so sertraline leaves your body more slowly and can build up as treatment continues."
+    },
+    "80fb81e6e0156222": {
+      "headline": "Your body clears sertraline much more slowly than most people.",
+      "detail": "Sertraline builds up to higher levels in your blood because your body is slow at breaking it down. Higher levels make side effects more likely."
+    },
+    "ac6a1a6e8c91bf13": {
+      "headline": "More simvastatin stays in your blood, raising muscle problem risk.",
+      "detail": "Your body doesn't move simvastatin out of your blood as well as usual, so more of it circulates. That raises your chance of muscle pain and damage."
+    },
+    "4c4d2bea148aac93": {
+      "headline": "Very high simvastatin levels give you a strongly raised muscle-damage risk.",
+      "detail": "Much more simvastatin stays in your blood than in most people, more even than in those with a partial change. This makes muscle pain and damage much more likely."
+    },
+    "90e14e43cde91fd9": {
+      "headline": "Your body clears tacrolimus quickly, so blood levels run low.",
+      "detail": "With a usual dose, the amount of tacrolimus in your blood tends to stay below the level needed for it to work well."
+    },
+    "2e80e3eb0fb88045": {
+      "headline": "Tacrolimus reaches the usual, expected levels in your blood.",
+      "detail": "Your body handles tacrolimus in the typical way, so a standard dose is likely to reach the target level in your blood."
+    },
+    "f0e0cd30c9c96e13": {
+      "headline": "Your body makes less of tamoxifen's active form than usual.",
+      "detail": "Tamoxifen has to be changed by your body into the substance that actually fights breast cancer, and you make less of it. This is linked with a higher chance of the cancer coming back."
+    },
+    "a3e1ea8252cf3aeb": {
+      "headline": "Your body makes less of tamoxifen's active form than usual.",
+      "detail": "Tamoxifen only works after your body changes it into an active substance, and you produce less of it. This is linked with a higher chance of the cancer coming back."
+    },
+    "997d99528eaa7765": {
+      "headline": "Your body handles this medicine in the usual way.",
+      "detail": "You break down thioguanine normally, so less of it builds up inside your blood cells. Your risk of low blood counts is the same as most people's."
+    },
+    "47e068503f3d2ccf": {
+      "headline": "You break this medicine down more slowly than most people.",
+      "detail": "More of the active drug builds up inside your blood cells than usual. That raises your chance of your bone marrow making too few blood cells, especially the white cells that fight infection."
+    },
+    "6fe15ba79ab1603f": {
+      "headline": "You break this medicine down more slowly than most people.",
+      "detail": "More of the active drug builds up inside your blood cells than usual. That raises your chance of your bone marrow making too few blood cells, especially the white cells that fight infection."
+    },
+    "b3f7696d2325728d": {
+      "headline": "This medicine can build up to dangerous, even deadly levels.",
+      "detail": "Your body barely breaks thioguanine down, so it can pile up and badly damage your bone marrow, leaving you with far too few blood cells. Without a much smaller dose, this can be fatal."
+    },
+    "31d26183cef66232": {
+      "headline": "This medicine can build up to dangerous, even deadly levels.",
+      "detail": "The active drug reaches extremely high levels inside your blood cells because your body cannot break it down. This can severely damage your bone marrow, and without a much smaller dose it can be fatal."
+    },
+    "88e985af459b3de9": {
+      "headline": "Your body clears this drug slowly, so it builds up more.",
+      "detail": "Two of your gene results together mean more of the drug's active form stays in your blood cells than usual. That raises the chance your bone marrow makes too few white blood cells, and the risk is higher than with just one of these gene results."
+    },
+    "a1e9608e82780a11": {
+      "headline": "Your body handles this medicine in the usual way.",
+      "detail": "Your genes work normally, so the active form of the drug builds up at a typical level. Your chance of low white blood cell counts or a slowed bone marrow is the same as for most people."
+    },
+    "dfae09cb52470048": {
+      "headline": "Your body clears this drug more slowly than most people's.",
+      "detail": "More of the drug's active form builds up inside your blood cells than usual. That makes it more likely your bone marrow will be held back and your white blood cell counts will drop too low."
+    },
+    "00661d3521808e99": {
+      "headline": "This gene result gives you the usual level of risk.",
+      "detail": "Based on your NUDT15 result, your chance of low white blood cell counts or a slowed bone marrow from this medicine is the same as for most people."
+    },
+    "44d82dc1548ec3c7": {
+      "headline": "Your gene result raises the chance of low blood counts.",
+      "detail": "Because of your NUDT15 result, this medicine is more likely to hold back your bone marrow. That can leave you with too few white blood cells."
+    },
+    "791e4f70340cd544": {
+      "headline": "This drug builds up strongly in you and may not work as expected.",
+      "detail": "Your body is much slower than usual at breaking this medicine down, so more of it stays active in your blood and side effects become more likely. Your genes also change how much of it turns into its second active form, which can affect how well it works."
+    },
+    "db38ac22900d6af2": {
+      "headline": "This drug builds up in you and is also changed unusually fast.",
+      "detail": "One of your genes breaks this medicine down slowly, so more active drug stays in your blood and side effects become more likely. Another gene changes it into its second form faster than usual, which can affect how it works and how you feel."
+    },
+    "327adb903f54b642": {
+      "headline": "Your body barely converts this drug into its second form.",
+      "detail": "You break this medicine down at a normal overall speed, but you make very little of the second active form. That change can affect how well it works and what side effects you get."
+    },
+    "78c196c58f8f8477": {
+      "headline": "Your body converts this drug into its second form faster than usual.",
+      "detail": "You break this medicine down at a normal overall speed, but more of it is turned into the second active form. That shift can change how well it works and what side effects you get."
+    },
+    "71cfeb9b53736ed5": {
+      "headline": "This drug builds up to high levels in your blood.",
+      "detail": "Your body is much slower than usual at breaking this medicine down into weaker forms, so more of the active drug stays in your blood. That makes side effects more likely."
+    },
+    "56c7ec312b82d50b": {
+      "headline": "This drug builds up to high levels in your blood.",
+      "detail": "Your body is much slower than usual at turning this medicine into weaker forms, so more of the active drug stays in your blood. That makes side effects more likely."
+    },
+    "95967d2296a03173": {
+      "headline": "This drug builds up strongly and is converted very little.",
+      "detail": "Your body is much slower than usual at breaking this medicine down, so more active drug stays in your blood and side effects become more likely. You also make very little of its second active form, which can affect how well it works."
+    },
+    "b391df91eb332f0a": {
+      "headline": "Your body handles this medicine very differently than usual.",
+      "detail": "You break this medicine down into weaker forms much more slowly than most people, so more of the active drug stays in your blood and side effects are more likely. At the same time, one part of the process runs faster than usual, which can change how the medicine works for you."
+    },
+    "7b4eefd41b754470": {
+      "headline": "This medicine may be cleared too fast to work well.",
+      "detail": "You break this medicine down into weaker forms faster than most people, so less of the active drug stays in your blood and the treatment may not work. Another part of the process runs slower than usual, which also changes the mix of substances in your body."
+    },
+    "f3aa6189b092529b": {
+      "headline": "You clear this medicine quickly, so it may not work.",
+      "detail": "Your body turns this medicine into weaker forms faster than most people. That leaves less active drug in your blood, so the treatment may not do its job."
+    },
+    "fd9e2f0245823193": {
+      "headline": "Your body processes this medicine in two unusual ways at once.",
+      "detail": "You break this medicine down into weaker forms faster than most people, so less active drug stays in your blood and it may not work. Another step happens far more slowly than usual, which can change how you respond and what side effects you get."
+    },
+    "471002ba29abbcf4": {
+      "headline": "Your body speeds through this medicine on two different paths.",
+      "detail": "You turn this medicine into weaker forms faster than most people, so less active drug stays in your blood and the treatment may not work. Another step also runs faster than usual, which can change how you respond and what side effects you get."
+    },
+    "1b119147c4169c4c": {
+      "headline": "Your genes change this medicine's chemistry, but the effect is unclear.",
+      "detail": "You change this medicine into its active form faster than most people. There isn't enough evidence to say whether that makes any real difference to how well it works or how you feel."
+    },
+    "8f07f75bb29e8edc": {
+      "headline": "Your genes slow one step, but the effect is unclear.",
+      "detail": "You change this medicine into its active form more slowly than most people. There isn't enough evidence to say whether that makes any real difference to how well it works or how you feel."
+    },
+    "67066476ccce254b": {
+      "headline": "Your body barely converts this medicine into its active form.",
+      "detail": "Much less of the medicine is changed into its active form than in most people, so more of the original drug builds up. What this means is not fully clear, but this genetic result has been linked with side effects."
+    },
+    "c7d31df9bdcbe055": {
+      "headline": "You clear this medicine fast, so levels may stay too low.",
+      "detail": "Your body breaks this medicine down quicker than usual. With a standard dose, there is only a modest chance of getting enough of it into your blood to fight the infection."
+    },
+    "ae3124f250470c53": {
+      "headline": "You clear this medicine so fast it likely won't work.",
+      "detail": "Your body breaks this medicine down very quickly. That means there is only a small chance the amount in your blood would ever reach a level that treats the infection."
+    },
+    "1fa3e7755f2bf164": {
+      "headline": "You clear this medicine faster, so your levels may vary.",
+      "detail": "Your body breaks this medicine down quicker than usual. The amount that ends up in your blood can be hard to predict, so it may need checking."
+    },
+    "69574abc6bcfb730": {
+      "headline": "Your body handles this medicine in the usual way.",
+      "detail": "You break this medicine down at a typical speed, so the amount in your blood should behave as expected."
+    },
+    "30074f6edb446aa9": {
+      "headline": "This medicine builds up a bit more in your blood.",
+      "detail": "Your body clears voriconazole a little more slowly than most people, so the amount left in your blood between doses tends to be higher."
+    },
+    "cf200ab5331bd487": {
+      "headline": "Your body clears this drug very slowly, so it builds up.",
+      "detail": "Voriconazole stays in your blood at much higher levels than in most people, which makes harmful side effects more likely."
+    },
+    "e92099824a89f191": {
+      "headline": "Your body clears this drug too fast to work well.",
+      "detail": "You break voriconazole down very quickly, so a normal dose is unlikely to reach the level in your blood needed to fight the infection."
+    },
+    "940847660eaeca64": {
+      "headline": "Your body clears this drug very slowly, so it builds up.",
+      "detail": "Voriconazole stays in your blood at much higher levels than in most people, which makes harmful side effects more likely."
+    },
+    "8ec4f36da684a889": {
+      "headline": "Your body breaks this medicine down too quickly to help.",
+      "detail": "You turn vortioxetine into inactive forms faster than most people, so less of it stays in your blood and it is less likely to work for you."
+    },
+    "56a3cf52944dcf24": {
+      "headline": "Your body handles this medicine in the usual way.",
+      "detail": "You break vortioxetine down at a typical speed, so the usual amount is expected to end up in your blood."
+    },
+    "fea88f80c4c10dca": {
+      "headline": "Your body breaks this medicine down more slowly than usual.",
+      "detail": "More vortioxetine stays in your blood than in most people, which can make side effects more likely."
+    },
+    "9d4aa6d84ff13f82": {
+      "headline": "Your body breaks this medicine down very slowly.",
+      "detail": "Much more vortioxetine stays in your blood than in most people, which can make side effects more likely."
+    }
+  }
+}

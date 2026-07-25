@@ -47,6 +47,14 @@ export interface Finding {
   recommendation: string;
   /** Verbatim CPIC implication text, per gene. */
   implications: Record<string, string>;
+  /**
+   * A plain-English restatement of the above, for the patient view.
+   *
+   * Pre-generated and committed, never written at request time, and never
+   * shown without the verbatim CPIC text beside it. Null when no translation
+   * exists, in which case the UI falls back to the source language.
+   */
+  plainEnglish: { headline: string; detail: string } | null;
   /** CPIC evidence strength: Strong / Moderate / Optional / No Recommendation. */
   classification: string;
   /** Clinical population the recommendation applies to, when CPIC scopes it. */

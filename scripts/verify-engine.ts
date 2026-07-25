@@ -6,6 +6,7 @@
 
 import { analyse, triage, resolveMedication, resolveGenotype } from "../src/lib/cpic/match";
 import { recommendations, cpicMeta, supportedGenes } from "../src/lib/cpic/data";
+import { lookupPlainEnglish, plainEnglishMeta } from "../src/lib/plain-english";
 import type { Severity } from "../src/lib/cpic/types";
 
 let failures = 0;
@@ -126,6 +127,41 @@ const unknownPct = (buckets.unknown.length / recommendations.length) * 100;
 check("unknown bucket stays small (<15%)", unknownPct < 15, `${unknownPct.toFixed(1)}%`);
 
 /* ---------------------------------------------------------------- */
+/* ---------------------------------------------------------------- */
+console.log("\n=== 5. Plain-English layer ===");
+
+// The lookup key is derived independently in the generator script and in the
+// app. If those ever drift apart nothing throws — every lookup simply misses
+// and the patient view silently reverts to prescriber language, which is the
+// exact problem this layer was added to fix.
+const translatable = recommendations.filter((r) => (r.recommendation ?? "").trim());
+let covered = 0;
+for (const rec of translatable) {
+  if (lookupPlainEnglish(rec.recommendation, rec.implications ?? {})) covered++;
+}
+const pct = (100 * covered) / translatable.length;
+check(
+  "every CPIC recommendation has a plain-English restatement",
+  pct === 100,
+  `${covered}/${translatable.length} (${pct.toFixed(1)}%)`,
+);
+
+check(
+  "translations are committed, not generated per request",
+  plainEnglishMeta.count > 0,
+  `${plainEnglishMeta.count} entries, generated ${plainEnglishMeta.generatedAt.slice(0, 10)}`,
+);
+
+// Every finding shown to a user must carry both registers: ours and CPIC's.
+const withBoth = result.findings.filter(
+  (f) => f.plainEnglish && f.recommendation.trim(),
+);
+check(
+  "findings carry plain English AND the verbatim guideline",
+  withBoth.length === result.findings.length,
+  `${withBoth.length}/${result.findings.length}`,
+);
+
 console.log(
   failures === 0
     ? "\nAll checks passed.\n"
