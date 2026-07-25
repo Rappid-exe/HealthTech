@@ -95,4 +95,9 @@ export interface AnalysisResult {
     genesTyped: number;
     medicationsReviewed: number;
   };
+  /**
+   * What this genotype means for every drug CPIC covers, not only the ones the
+   * user listed. Populated by buildProfile; see profile.ts for why it exists.
+   */
+  profile: import("./profile").DrugProfile;
 }

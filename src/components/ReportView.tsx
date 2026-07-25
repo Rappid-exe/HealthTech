@@ -1,5 +1,6 @@
 import type { AnalysisResult } from "@/lib/cpic/types";
 import { FindingCard } from "@/components/FindingCard";
+import { DrugProfilePanel } from "@/components/DrugProfilePanel";
 import { SEVERITY_UI } from "@/lib/present";
 
 export interface ReportHeader {
@@ -129,6 +130,11 @@ export function ReportView({
           </div>
         </section>
       )}
+
+      <DrugProfilePanel
+        profile={result.profile}
+        medicationsReviewed={summary.medicationsReviewed}
+      />
 
       <section className="mt-8">
         <h2 className="text-xs font-semibold uppercase tracking-wider text-faint">

@@ -162,6 +162,56 @@ check(
   `${withBoth.length}/${result.findings.length}`,
 );
 
+/* ---------------------------------------------------------------- */
+console.log("\n=== 6. Full drug-response profile ===");
+
+const profile = result.profile;
+console.log(
+  `  ${profile.total} drugs affected · ${profile.avoid.length} avoid · ${profile.adjust.length} adjust`,
+);
+
+check(
+  "profile covers far more drugs than were submitted",
+  profile.total > result.summary.medicationsReviewed * 3,
+  `${profile.total} vs ${result.summary.medicationsReviewed} submitted`,
+);
+
+// The reason this feature exists. A CYP2D6 poor metaboliser told only that
+// codeine fails will be offered tramadol next; it fails identically. If this
+// check breaks, the section has lost the insight and is just a longer list.
+const traps = profile.avoid.filter(
+  (e) => !e.currentlyTaking && e.sameMechanismAs.length > 0,
+);
+const tramadol = traps.find((e) => e.drugName === "tramadol");
+check("detects shared-mechanism substitutes", traps.length > 0, `${traps.length} found`);
+check(
+  "flags tramadol as failing for the same reason as codeine",
+  Boolean(tramadol && tramadol.sameMechanismAs.includes("codeine")),
+  tramadol ? `via ${tramadol.genes.join(",")}` : "tramadol not flagged",
+);
+
+check(
+  "drugs already taken are marked, not double-reported as new risks",
+  profile.avoid.some((e) => e.currentlyTaking),
+);
+
+// Every profile entry must be traceable, exactly like a finding.
+const untraceable = [...profile.avoid, ...profile.adjust].filter(
+  (e) => !e.recommendation?.trim(),
+);
+check(
+  "every profile entry carries its verbatim CPIC recommendation",
+  untraceable.length === 0,
+  `${untraceable.length} without text`,
+);
+
+const ungrouped = profile.grouped.reduce((n, g) => n + g.entries.length, 0);
+check(
+  "grouping loses nothing",
+  ungrouped === profile.avoid.length + profile.adjust.length,
+  `${ungrouped} grouped vs ${profile.avoid.length + profile.adjust.length} actionable`,
+);
+
 console.log(
   failures === 0
     ? "\nAll checks passed.\n"

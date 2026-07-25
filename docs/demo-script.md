@@ -25,8 +25,11 @@ example.
 | **0:12** | "This is a consumer DNA file — the kind more than forty million people already have sitting in a downloads folder. It's read in my browser. It never gets uploaded." | Click **See it work →** |
 | **0:22** | "Alex is six weeks post-stent, on Plavix. But they're a CYP2C19 poor metaboliser — their body can't activate it. They have been taking a blood thinner that does close to nothing." | Results are already on screen. Point at the red card. |
 | **0:36** | "That's not our opinion. It's the CPIC prescribing guideline, word for word, with its evidence grade and a link to the source." | Point at the quote block, then the **Strong evidence** badge. |
-| **0:45** | "Same findings, one page, for a GP with an eight-minute appointment." | Click **Physician brief**. Same result, re-rendered — don't say "and here's another page", the point is that it is the *same data*. |
-| **0:52** | "No language model wrote a word of the medicine. It only reads the file. Every recommendation is a published guideline, matched deterministically." | Stay on the brief. Stop talking. |
+| **0:44** | "And it doesn't stop at what they're taking. Their genome affects forty medicines. **The next painkiller a doctor reaches for after codeine is tramadol — same enzyme, same failure.**" | Scroll to **Beyond the medicines you take now**. This is the beat that lands; don't rush it. |
+| **0:54** | "No language model chose any of this. Every line is a published guideline, matched deterministically. You check once, and it holds for life." | Stop talking. |
+
+If you have a spare ten seconds, click **Physician brief** — same findings, one
+page, for a GP with an eight-minute appointment. Cut it first if you are long.
 
 ---
 
