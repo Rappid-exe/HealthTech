@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 
 /**
  * A full-bleed ASCII backdrop: several double helices rotating on a diagonal
@@ -146,6 +146,7 @@ export function DnaBackdrop() {
   const [grid, setGrid] = useState({ cols: 0, rows: 0 });
   const [phase, setPhase] = useState(0);
   const [animate, setAnimate] = useState(false);
+  const spotRef = useRef<HTMLPreElement>(null);
 
   useEffect(() => {
     const measure = () => {
@@ -183,35 +184,102 @@ export function DnaBackdrop() {
     [grid.cols, grid.rows, phase],
   );
 
+  /**
+   * Field and helices merged into one grid. The spotlight renders this rather
+   * than either layer alone, so the pointer reveals the sparse field *and* the
+   * structure at once — more characters appear under the cursor, not just
+   * brighter ones.
+   */
+  const composite = useMemo(() => {
+    if (!field || !helices) return "";
+    const f = field.split("\n");
+    const h = helices.split("\n");
+    return h
+      .map((row, r) => {
+        const fRow = f[r] ?? "";
+        let out = "";
+        for (let c = 0; c < row.length; c++) {
+          out += row[c] !== " " ? row[c] : (fRow[c] ?? " ");
+        }
+        return out;
+      })
+      .join("\n");
+  }, [field, helices]);
+
+  // The spotlight mask is written straight to the node. Routing pointer moves
+  // through React state would re-render a ~13,000 character <pre> on every
+  // mousemove; this touches one style property instead.
+  useEffect(() => {
+    const el = spotRef.current;
+    if (!el) return;
+
+    let frame = 0;
+    let x = -9999;
+    let y = -9999;
+
+    const paint = () => {
+      frame = 0;
+      const g = `radial-gradient(circle 170px at ${x}px ${y}px, black 0%, black 22%, transparent 72%)`;
+      el.style.maskImage = g;
+      el.style.webkitMaskImage = g;
+    };
+
+    const onMove = (e: PointerEvent) => {
+      x = e.clientX;
+      y = e.clientY;
+      if (!frame) frame = requestAnimationFrame(paint);
+    };
+    const onLeave = () => {
+      x = -9999;
+      y = -9999;
+      if (!frame) frame = requestAnimationFrame(paint);
+    };
+
+    paint();
+    window.addEventListener("pointermove", onMove, { passive: true });
+    document.addEventListener("pointerleave", onLeave);
+    return () => {
+      if (frame) cancelAnimationFrame(frame);
+      window.removeEventListener("pointermove", onMove);
+      document.removeEventListener("pointerleave", onLeave);
+    };
+  }, [grid.cols]);
+
   if (!grid.cols) return null;
 
-  const layer =
-    "notation absolute inset-0 m-0 overflow-hidden whitespace-pre text-foreground";
+  const layer = "notation absolute inset-0 m-0 overflow-hidden whitespace-pre";
+  const type = { fontSize: FONT_PX, lineHeight: `${CHAR_H}px` };
+
+  // Keeps the texture off the headline and body copy at the top left, and lets
+  // it build towards the open right edge. Applied to the resting layers only —
+  // the spotlight deliberately ignores it, so the pointer lights up the helix
+  // anywhere on the page. Page text sits above this at full opacity regardless.
+  const vignette =
+    "radial-gradient(105% 85% at 11% 20%, transparent 0%, transparent 20%, black 72%)";
 
   return (
     <div
       aria-hidden
       className="pointer-events-none fixed inset-0 -z-10 select-none overflow-hidden"
-      style={{
-        // Lifts the texture away from the headline on the left, where body copy
-        // sits, and lets it build towards the empty right edge.
-        maskImage:
-          "radial-gradient(120% 90% at 12% 22%, transparent 0%, transparent 26%, black 78%)",
-        WebkitMaskImage:
-          "radial-gradient(120% 90% at 12% 22%, transparent 0%, transparent 26%, black 78%)",
-      }}
     >
-      <pre
-        className={layer}
-        style={{ fontSize: FONT_PX, lineHeight: `${CHAR_H}px`, opacity: 0.07 }}
+      <div
+        className="absolute inset-0"
+        style={{ maskImage: vignette, WebkitMaskImage: vignette }}
       >
-        {field}
-      </pre>
+        <pre className={`${layer} text-foreground`} style={{ ...type, opacity: 0.3 }}>
+          {field}
+        </pre>
+        <pre className={`${layer} text-foreground`} style={{ ...type, opacity: 0.62 }}>
+          {helices}
+        </pre>
+      </div>
+
       <pre
-        className={layer}
-        style={{ fontSize: FONT_PX, lineHeight: `${CHAR_H}px`, opacity: 0.2 }}
+        ref={spotRef}
+        className={`${layer} text-accent`}
+        style={{ ...type, opacity: 0.85 }}
       >
-        {helices}
+        {composite}
       </pre>
     </div>
   );
