@@ -179,10 +179,14 @@ export async function extract(
   reportText: string,
   medicationText?: string,
 ): Promise<ExtractionResult> {
-  // Trimmed deliberately: a key pasted into a hosting dashboard very often
-  // carries a leading space, and the resulting 401 is otherwise indistinguishable
-  // from an invalid key.
-  const apiKey = process.env.ANTHROPIC_API_KEY?.trim();
+  // Pasting into a hosting dashboard's textarea reliably produces malformed
+  // values — a leading space, a trailing newline, or the key repeated across
+  // several lines. Any of those become an unsendable HTTP header, and the
+  // resulting TypeError says nothing about the real cause. Take the first
+  // non-empty line and strip all whitespace from it.
+  const apiKey = process.env.ANTHROPIC_API_KEY?.split(/[\r\n]+/)
+    .map((line) => line.replace(/\s/g, ""))
+    .find(Boolean);
   if (!apiKey) {
     throw new ExtractionError(
       "ANTHROPIC_API_KEY is not configured on the server.",
