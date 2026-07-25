@@ -29,6 +29,20 @@ const STAGES_REPORT = [
 ];
 const STAGES_RAW = ["Matching against CPIC guidelines", "Building your report"];
 
+/**
+ * The medication list paired with the sample genome for the one-click path.
+ * Chosen to exercise the full range of outcomes rather than only alarms: three
+ * high-severity conflicts, one dose caution, and one drug with no
+ * pharmacogenomic guideline at all.
+ */
+const SAMPLE_MEDICATIONS = [
+  "Plavix 75mg once daily",
+  "simvastatin 40mg nightly",
+  "codeine 30mg as needed",
+  "omeprazole 20mg once daily",
+  "lisinopril 10mg once daily",
+];
+
 export function UploadFlow({
   demoReportText,
   meta,
@@ -109,6 +123,52 @@ export function UploadFlow({
     }
   }
 
+  /**
+   * The one-click path: fetch the sample genome, call it locally, and match —
+   * all without a file picker or a model call. Runs in well under a second,
+   * which matters when the whole demo is sixty seconds long.
+   */
+  async function runSample() {
+    setStatus("running");
+    setError(null);
+    setData(null);
+    setStage(0);
+    setFileName("sample-23andme.txt");
+    setMedicationText(SAMPLE_MEDICATIONS.join("\n"));
+
+    try {
+      const res = await fetch("/sample-23andme.txt");
+      if (!res.ok) throw new Error("sample unavailable");
+      const called = callStarAlleles(await res.text());
+      setRaw(called);
+
+      const matched = await fetch("/api/match", {
+        method: "POST",
+        headers: { "content-type": "application/json" },
+        body: JSON.stringify({
+          genotypes: called.calls
+            .filter((c) => c.status === "called" && c.diplotype)
+            .map((c) => ({ gene: c.gene, diplotype: c.diplotype })),
+          medications: SAMPLE_MEDICATIONS,
+        }),
+      });
+      const json = await matched.json();
+      if (!matched.ok) {
+        setError(json.error ?? "Analysis failed.");
+        setStatus("error");
+        return;
+      }
+      setData(json as AnalyseResponse);
+      setStatus("done");
+      requestAnimationFrame(() =>
+        resultRef.current?.scrollIntoView({ behavior: "smooth", block: "start" }),
+      );
+    } catch {
+      setError("Could not load the sample genome.");
+      setStatus("error");
+    }
+  }
+
   async function onFile(e: React.ChangeEvent<HTMLInputElement>) {
     const file = e.target.files?.[0];
     if (!file) return;
@@ -163,7 +223,21 @@ export function UploadFlow({
               person taking the pills. Beacon closes that gap.
             </p>
 
-            <div className="mt-6 flex flex-wrap items-center gap-x-5 gap-y-2 text-sm text-faint">
+            <div className="mt-7 flex flex-wrap items-center gap-3">
+              <button
+                type="button"
+                onClick={runSample}
+                disabled={busy}
+                className="rounded-lg bg-foreground px-5 py-2.5 text-sm font-medium text-background transition-opacity hover:opacity-90 disabled:opacity-40"
+              >
+                {busy ? "Reading genome…" : "See it work →"}
+              </button>
+              <span className="text-sm text-muted">
+                Runs on a sample genome. Nothing to upload.
+              </span>
+            </div>
+
+            <div className="mt-7 flex flex-wrap items-center gap-x-5 gap-y-2 text-sm text-faint">
               <span>
                 <span className="font-medium text-foreground/70">
                   {meta.recommendations.toLocaleString()}

@@ -14,14 +14,30 @@ import {
  * argument of the product: the reader can always see which sentence a model
  * wrote and which one a guideline committee did.
  */
-export function FindingCard({ finding }: { finding: Finding }) {
+export function FindingCard({
+  finding,
+  prominent = false,
+}: {
+  finding: Finding;
+  /**
+   * Applied to the lead finding. Findings arrive in triage order, so the first
+   * one is the most serious thing the report has to say — rendering it at the
+   * same weight as the rest buries the only line that might change what
+   * someone does today.
+   */
+  prominent?: boolean;
+}) {
   const ui = SEVERITY_UI[finding.severity];
   const indication = populationLabel(finding.population);
   const implication = Object.entries(finding.implications);
 
   return (
     <article
-      className={`overflow-hidden rounded-xl border ${ui.border} bg-surface shadow-[0_1px_2px_rgba(0,0,0,0.04)]`}
+      className={`overflow-hidden rounded-xl border bg-surface ${ui.border} ${
+        prominent
+          ? "border-2 shadow-[0_2px_14px_rgba(0,0,0,0.07)]"
+          : "shadow-[0_1px_2px_rgba(0,0,0,0.04)]"
+      }`}
     >
       <div className={`flex items-center gap-2.5 border-b ${ui.border} ${ui.surface} px-5 py-2.5`}>
         <span className={`h-2 w-2 shrink-0 rounded-full ${ui.dot}`} aria-hidden />
@@ -35,7 +51,11 @@ export function FindingCard({ finding }: { finding: Finding }) {
 
       <div className="px-5 py-4">
         <div className="flex flex-wrap items-baseline gap-x-2.5 gap-y-1">
-          <h3 className="text-xl font-semibold tracking-tight capitalize">
+          <h3
+            className={`font-semibold tracking-tight capitalize ${
+              prominent ? "text-3xl" : "text-xl"
+            }`}
+          >
             {finding.drugName}
           </h3>
           <span className="text-sm text-muted">
@@ -85,7 +105,9 @@ export function FindingCard({ finding }: { finding: Finding }) {
               Guideline recommendation
             </p>
             <blockquote
-              className={`mt-1.5 border-l-2 ${ui.border} ${ui.surface} py-2.5 pl-3.5 pr-3 text-[15px] font-medium leading-relaxed`}
+              className={`mt-1.5 border-l-2 ${ui.border} ${ui.surface} py-2.5 pl-3.5 pr-3 font-medium leading-relaxed ${
+                prominent ? "text-[17px]" : "text-[15px]"
+              }`}
             >
               {finding.recommendation}
             </blockquote>

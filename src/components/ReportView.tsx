@@ -39,13 +39,13 @@ export function ReportView({
       )}
 
       <section
-        className={`mt-6 rounded-xl border ${
+        className={`reveal mt-6 rounded-xl border ${
           summary.high > 0
             ? "border-[var(--high-border)] bg-[var(--high-surface)]"
             : "border-border bg-surface"
         } px-5 py-4`}
       >
-        <p className="text-lg font-semibold leading-snug">
+        <p className="text-balance text-xl font-semibold leading-snug sm:text-2xl">
           {needsAttention > 0 ? (
             <>
               {needsAttention} of your {summary.medicationsReviewed} medications{" "}
@@ -88,11 +88,14 @@ export function ReportView({
               No CPIC guideline applies to this combination of genes and medications.
             </p>
           ) : (
-            findings.map((f) => (
-              <FindingCard
+            findings.map((f, i) => (
+              <div
                 key={`${f.drugId}-${f.genotypes.map((g) => g.gene).join()}`}
-                finding={f}
-              />
+                className="reveal"
+                style={{ animationDelay: `${i * 80}ms` }}
+              >
+                <FindingCard finding={f} prominent={i === 0} />
+              </div>
             ))
           )}
         </div>
