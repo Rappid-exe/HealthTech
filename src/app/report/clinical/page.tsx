@@ -83,7 +83,11 @@ export default function ClinicalBriefPage() {
         <h2 className="mb-1.5 text-[11px] font-bold uppercase tracking-wider">
           Actionable findings ({actionable.length})
         </h2>
-        <table className="w-full border-collapse">
+        {/* The brief is designed for A4 and its columns do not usefully reflow.
+            On a narrow screen the table scrolls within its own container rather
+            than pushing the whole page sideways; print is unaffected. */}
+        <div className="-mx-6 overflow-x-auto px-6 print:mx-0 print:overflow-visible print:px-0">
+        <table className="w-full min-w-[560px] border-collapse print:min-w-0">
           <thead>
             <tr className="border-y border-border-strong text-left text-[10px] uppercase tracking-wider text-muted">
               <th className="py-1 pr-3 font-semibold">Drug</th>
@@ -98,6 +102,7 @@ export default function ClinicalBriefPage() {
             ))}
           </tbody>
         </table>
+        </div>
       </section>
 
       {/* Routine + no-finding drugs, compressed to a single line each */}
@@ -127,7 +132,10 @@ export default function ClinicalBriefPage() {
         <h2 className="mb-1.5 text-[11px] font-bold uppercase tracking-wider">
           Full panel ({result.genotypes.length} genes)
         </h2>
-        <div className="grid grid-cols-2 gap-x-8 gap-y-0.5 text-[12px] sm:grid-cols-3">
+        {/* Single column on a phone: at two columns the gene, diplotype and
+            phenotype cannot share a row without spilling. A4 is wide enough for
+            three, which is what print gets. */}
+        <div className="grid grid-cols-1 gap-x-8 gap-y-0.5 text-[12px] sm:grid-cols-3">
           {result.genotypes.map((g) => (
             <div key={g.gene} className="flex items-baseline gap-1.5">
               <span className="notation font-semibold">{g.gene}</span>
