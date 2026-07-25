@@ -1,0 +1,31 @@
+{
+  "source": "Clinical Pharmacogenetics Implementation Consortium (CPIC)",
+  "api": "https://api.cpicpgx.org/v1",
+  "homepage": "https://cpicpgx.org",
+  "seededAt": "2026-07-25T10:56:49.836Z",
+  "curatedGenes": [
+    "CYP2C19",
+    "CYP2D6",
+    "CYP2C9",
+    "SLCO1B1",
+    "TPMT",
+    "NUDT15",
+    "DPYD",
+    "CYP3A5",
+    "UGT1A1",
+    "CYP2B6",
+    "MT-RNR1",
+    "ABCG2",
+    "CACNA1S",
+    "HLA-A",
+    "HLA-B"
+  ],
+  "counts": {
+    "genes": 15,
+    "diplotypes": 27381,
+    "phenotypes": 67,
+    "recommendations": 2115,
+    "drugs": 324,
+    "guidelines": 29
+  }
+}

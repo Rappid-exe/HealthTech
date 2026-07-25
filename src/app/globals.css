@@ -1,26 +1,112 @@
 @import "tailwindcss";
 
+/*
+ * Beacon runs light-only and says so via color-scheme. Clinical documents are
+ * light, and pinning the scheme means the demo renders identically on whatever
+ * projector it lands on rather than inheriting a dark OS preference.
+ */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  color-scheme: light;
+
+  --background: #fbfbfa;
+  --surface: #ffffff;
+  --foreground: #16171a;
+  --muted: #6b7076;
+  --faint: #9aa0a6;
+  --border: #e4e4e2;
+  --border-strong: #d2d2cf;
+
+  /* Severity. Deep and desaturated - this is a medical report, not an alarm. */
+  --high: #a61b2b;
+  --high-surface: #fdf3f3;
+  --high-border: #f0d0d2;
+
+  --caution: #8a5a08;
+  --caution-surface: #fdf8ef;
+  --caution-border: #eddfc4;
+
+  --standard: #1f6b4a;
+  --standard-surface: #f2f8f5;
+  --standard-border: #cfe4d8;
+
+  --unknown: #55595f;
+  --unknown-surface: #f5f5f4;
+  --unknown-border: #e0e0de;
+
+  --accent: #1a4fa0;
 }
 
 @theme inline {
   --color-background: var(--background);
+  --color-surface: var(--surface);
   --color-foreground: var(--foreground);
+  --color-muted: var(--muted);
+  --color-faint: var(--faint);
+  --color-border: var(--border);
+  --color-border-strong: var(--border-strong);
+  --color-high: var(--high);
+  --color-high-surface: var(--high-surface);
+  --color-high-border: var(--high-border);
+  --color-caution: var(--caution);
+  --color-caution-surface: var(--caution-surface);
+  --color-caution-border: var(--caution-border);
+  --color-standard: var(--standard);
+  --color-standard-surface: var(--standard-surface);
+  --color-standard-border: var(--standard-border);
+  --color-unknown: var(--unknown);
+  --color-unknown-surface: var(--unknown-surface);
+  --color-unknown-border: var(--unknown-border);
+  --color-accent: var(--accent);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Genotype notation reads as data, so it gets the mono face wherever it appears. */
+.notation {
+  font-family: var(--font-geist-mono), ui-monospace, monospace;
+  font-variant-ligatures: none;
+}
+
+/*
+ * Print rules for the physician brief. The brief has to survive being sent to
+ * whatever printer sits in a clinic corridor, so backgrounds are forced to
+ * render and interactive chrome is removed.
+ */
+@media print {
+  @page {
+    size: A4;
+    margin: 12mm;
+  }
+
+  html,
+  body {
+    background: #fff !important;
+    font-size: 10pt;
+  }
+
+  .no-print {
+    display: none !important;
+  }
+
+  .print-plain {
+    border: none !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+  }
+
+  * {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  a[href]::after {
+    content: "";
+  }
 }
