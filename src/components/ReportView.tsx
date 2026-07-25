@@ -31,7 +31,7 @@ export function ReportView({
   return (
     <>
       <div className="flex flex-wrap items-baseline gap-x-3 gap-y-1">
-        <h1 className="text-2xl font-semibold tracking-tight">{header.name}</h1>
+        <h1 className="display text-[1.9rem]">{header.name}</h1>
         {header.subtitle && <span className="text-sm text-muted">{header.subtitle}</span>}
       </div>
       {header.context && (
@@ -45,7 +45,7 @@ export function ReportView({
             : "border-border bg-surface"
         } px-5 py-4`}
       >
-        <p className="text-balance text-xl font-semibold leading-snug sm:text-2xl">
+        <p className="display text-balance text-[1.45rem] leading-snug sm:text-[1.7rem]">
           {needsAttention > 0 ? (
             <>
               {needsAttention} of your {summary.medicationsReviewed} medications{" "}

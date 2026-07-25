@@ -212,7 +212,7 @@ export function UploadFlow({
       <section className="mx-auto w-full max-w-3xl px-5 pt-14">
         <div>
           <div>
-            <h1 className="text-balance text-4xl font-semibold leading-[1.1] tracking-tight sm:text-5xl">
+            <h1 className="display text-balance text-[2.6rem] leading-[1.08] sm:text-[3.4rem]">
               Your prescriptions,
               <br />
               checked against your genome.

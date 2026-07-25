@@ -52,9 +52,7 @@ export function FindingCard({
       <div className="px-5 py-4">
         <div className="flex flex-wrap items-baseline gap-x-2.5 gap-y-1">
           <h3
-            className={`font-semibold tracking-tight capitalize ${
-              prominent ? "text-3xl" : "text-xl"
-            }`}
+            className={`display capitalize ${prominent ? "text-[2rem]" : "text-[1.35rem]"}`}
           >
             {finding.drugName}
           </h3>

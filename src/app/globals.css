@@ -4,36 +4,48 @@
  * Beacon runs light-only and says so via color-scheme. Clinical documents are
  * light, and pinning the scheme means the demo renders identically on whatever
  * projector it lands on rather than inheriting a dark OS preference.
+ *
+ * The neutrals are cool rather than warm on purpose. A warm cream page with a
+ * serif and a terracotta accent has become the recognisable signature of
+ * generated design; this product should read as an instrument, not an editorial
+ * spread.
  */
 :root {
   color-scheme: light;
 
-  --background: #fbfbfa;
+  --background: #fafbfc;
   --surface: #ffffff;
-  --foreground: #16171a;
-  --muted: #6b7076;
-  --faint: #9aa0a6;
-  --border: #e4e4e2;
-  --border-strong: #d2d2cf;
+  --foreground: #131820;
+  --muted: #4f5966;
+  /* Carries the small uppercase section labels, so it has to clear 4.5:1
+     against the page rather than merely look recessive. */
+  --faint: #646d7a;
+  --border: #e4e8ec;
+  --border-strong: #cbd2da;
 
-  /* Severity. Deep and desaturated - this is a medical report, not an alarm. */
-  --high: #a61b2b;
-  --high-surface: #fdf3f3;
-  --high-border: #f0d0d2;
+  /* The single accent. Deep enough to read as considered rather than as a
+     default framework blue. */
+  --accent: #0b5e5b;
+  --accent-soft: #e8f1f0;
 
-  --caution: #8a5a08;
+  /* Severity. Deep and desaturated - this is a medical report, not an alarm,
+     and these are the only saturated colours on the page so that red still
+     means something when it appears. */
+  --high: #a81c2e;
+  --high-surface: #fdf4f5;
+  --high-border: #f0d3d7;
+
+  --caution: #8a5708;
   --caution-surface: #fdf8ef;
-  --caution-border: #eddfc4;
+  --caution-border: #ecdfc6;
 
-  --standard: #1f6b4a;
-  --standard-surface: #f2f8f5;
-  --standard-border: #cfe4d8;
+  --standard: #1c6350;
+  --standard-surface: #f1f8f5;
+  --standard-border: #cde4da;
 
-  --unknown: #55595f;
-  --unknown-surface: #f5f5f4;
-  --unknown-border: #e0e0de;
-
-  --accent: #1a4fa0;
+  --unknown: #555f6b;
+  --unknown-surface: #f4f6f7;
+  --unknown-border: #e0e5e9;
 }
 
 @theme inline {
@@ -57,21 +69,38 @@
   --color-unknown-surface: var(--unknown-surface);
   --color-unknown-border: var(--unknown-border);
   --color-accent: var(--accent);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-accent-soft: var(--accent-soft);
+
+  --font-display: var(--font-display);
+  --font-sans: var(--font-sans);
+  --font-mono: var(--font-mono);
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
+  font-family: var(--font-sans), ui-sans-serif, system-ui, sans-serif;
   -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
 }
 
-/* Genotype notation reads as data, so it gets the mono face wherever it appears. */
+/*
+ * Genotype notation reads as data, so it gets the mono face wherever it
+ * appears. Ligatures off: "*1/*2" must not be prettified into something that
+ * is no longer the string CPIC published.
+ */
 .notation {
-  font-family: var(--font-geist-mono), ui-monospace, monospace;
+  font-family: var(--font-mono), ui-monospace, monospace;
   font-variant-ligatures: none;
+}
+
+/* Headlines. The serif is load-bearing: it is what separates a clinical
+   reference from a dashboard. Tightened tracking because Newsreader sets a
+   little loose at display sizes. */
+.display {
+  font-family: var(--font-display), ui-serif, Georgia, serif;
+  letter-spacing: -0.015em;
+  font-weight: 500;
 }
 
 /*

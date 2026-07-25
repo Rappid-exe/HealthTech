@@ -50,7 +50,7 @@ export default function ClinicalBriefPage() {
       {/* Masthead */}
       <header className="border-b-2 border-foreground pb-2">
         <div className="flex items-baseline justify-between gap-4">
-          <h1 className="text-base font-bold uppercase tracking-wide">
+          <h1 className="display text-[1.25rem] tracking-normal">
             Pharmacogenomic Brief
           </h1>
           <span className="text-[11px] text-muted">
