@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm -v)",
+      "Bash(gh --version)",
+      "Bash(git --version)"
+    ]
+  }
+}
