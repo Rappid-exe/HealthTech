@@ -2,6 +2,7 @@ import { cpicMeta } from "@/lib/cpic/data";
 import { DEMO_REPORT_TEXT } from "@/lib/demo/patient";
 import { SiteHeader } from "@/components/SiteHeader";
 import { UploadFlow } from "@/components/UploadFlow";
+import { DnaBackdrop } from "@/components/DnaBackdrop";
 
 /**
  * Server component wrapper. The CPIC dataset and the sample report are read
@@ -11,6 +12,7 @@ import { UploadFlow } from "@/components/UploadFlow";
 export default function Home() {
   return (
     <>
+      <DnaBackdrop />
       <SiteHeader />
       <main className="flex-1 pb-16">
         <UploadFlow

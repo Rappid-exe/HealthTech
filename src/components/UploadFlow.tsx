@@ -5,7 +5,6 @@ import Link from "next/link";
 import type { AnalysisResult } from "@/lib/cpic/types";
 import { ReportView } from "@/components/ReportView";
 import { ProvenanceFooter, type DatasetMeta } from "@/components/ProvenanceFooter";
-import { DnaHelix } from "@/components/DnaHelix";
 
 interface AnalyseResponse {
   result: AnalysisResult;
@@ -84,7 +83,7 @@ export function UploadFlow({
   return (
     <>
       <section className="mx-auto w-full max-w-3xl px-5 pt-14">
-        <div className="grid items-center gap-6 sm:grid-cols-[1fr_auto] sm:gap-8">
+        <div>
           <div>
             <h1 className="text-balance text-4xl font-semibold leading-[1.1] tracking-tight sm:text-5xl">
               Your prescriptions,
@@ -112,8 +111,6 @@ export function UploadFlow({
               </span>
             </div>
           </div>
-
-          <DnaHelix className="hidden sm:block" />
         </div>
       </section>
 
