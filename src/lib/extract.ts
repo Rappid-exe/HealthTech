@@ -156,7 +156,17 @@ function classify(err: unknown): ExtractionError {
       "unavailable",
     );
   }
-  return new ExtractionError("Extraction failed unexpectedly.", "unavailable");
+  // Not an SDK error class. Carry the underlying name and message through so a
+  // deployment-only failure is diagnosable without server log access — with any
+  // key-shaped substring redacted, since this reaches the client.
+  const name = err instanceof Error ? err.name : typeof err;
+  const detail = (err instanceof Error ? err.message : String(err))
+    .replace(/sk-ant-[A-Za-z0-9_-]+/g, "[redacted]")
+    .slice(0, 200);
+  return new ExtractionError(
+    `Extraction failed unexpectedly: ${name}: ${detail}`,
+    "unavailable",
+  );
 }
 
 /**
