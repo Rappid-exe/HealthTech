@@ -28,7 +28,7 @@ const AMPLITUDE = 70;
 /** Pixels along the axis for one full turn. */
 const PERIOD = 260;
 /** Perpendicular distance between neighbouring helices, in pixels. */
-const SPACING = 520;
+const SPACING = 440;
 /**
  * Sampling step along the axis, in pixels. This has to clear roughly one cell
  * diagonal or the backbone is oversampled: several consecutive samples round
@@ -37,8 +37,12 @@ const SPACING = 520;
  * about 1.1 cells across and 0.9 down — one glyph per cell, no smearing.
  */
 const STEP = 12;
-/** Draw a rung every Nth step, so it reads as a ladder rather than a ribbon. */
-const RUNG_EVERY = 3;
+/**
+ * Draw a rung every Nth step. Too sparse and the two backbones read as
+ * unrelated dotted curves rather than one ladder — which is what "it doesn't
+ * look like a helix" actually comes down to.
+ */
+const RUNG_EVERY = 2;
 
 const FPS = 12;
 const FIELD_CHARS = ".·:'`,";
@@ -255,7 +259,7 @@ export function DnaBackdrop() {
   // the spotlight deliberately ignores it, so the pointer lights up the helix
   // anywhere on the page. Page text sits above this at full opacity regardless.
   const vignette =
-    "radial-gradient(105% 85% at 11% 20%, transparent 0%, transparent 20%, black 72%)";
+    "radial-gradient(95% 78% at 11% 20%, transparent 0%, transparent 12%, black 58%)";
 
   return (
     <div
@@ -269,10 +273,13 @@ export function DnaBackdrop() {
         {/* Accent rather than ink: the backdrop is where the page's colour
             comes from, so the teal reads as a property of the whole surface
             instead of a detail on one button. */}
-        <pre className={`${layer} text-accent`} style={{ ...type, opacity: 0.26 }}>
+        {/* The helices carry most of the weight now. The field stays low —
+            pushing both up together just reads as noise, whereas lifting the
+            structure alone is what makes the double strand legible. */}
+        <pre className={`${layer} text-accent`} style={{ ...type, opacity: 0.3 }}>
           {field}
         </pre>
-        <pre className={`${layer} text-accent`} style={{ ...type, opacity: 0.5 }}>
+        <pre className={`${layer} text-accent`} style={{ ...type, opacity: 0.82 }}>
           {helices}
         </pre>
       </div>
