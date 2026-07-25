@@ -32,11 +32,14 @@ export function FindingCard({
   const implication = Object.entries(finding.implications);
 
   return (
+    /* The spine is the card's only structural colour, and it is the severity
+       itself — so a page of findings can be read down the left edge alone,
+       before any text. Decoration would not survive that test. */
     <article
-      className={`overflow-hidden rounded-xl border bg-surface ${ui.border} ${
+      className={`overflow-hidden rounded-xl border border-l-[5px] bg-surface ${ui.border} ${ui.spine} ${
         prominent
-          ? "border-2 shadow-[0_2px_14px_rgba(0,0,0,0.07)]"
-          : "shadow-[0_1px_2px_rgba(0,0,0,0.04)]"
+          ? "shadow-[0_4px_20px_rgba(19,24,32,0.08)]"
+          : "shadow-[0_1px_3px_rgba(19,24,32,0.05)]"
       }`}
     >
       <div className={`flex items-center gap-2.5 border-b ${ui.border} ${ui.surface} px-5 py-2.5`}>
@@ -92,7 +95,7 @@ export function FindingCard({
               {finding.genotypes.map((g) => (
                 <span
                   key={g.gene}
-                  className="inline-flex items-baseline gap-1.5 rounded-md border border-border bg-background px-2 py-1 text-sm"
+                  className="inline-flex items-baseline gap-1.5 rounded-md border border-[var(--accent-soft)] bg-accent-tint px-2 py-1 text-sm"
                 >
                   <span className="notation font-medium">{g.gene}</span>
                   <span className="notation text-muted">{g.diplotype}</span>

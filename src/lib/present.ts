@@ -4,7 +4,16 @@ import type { Severity } from "@/lib/cpic/types";
 
 export const SEVERITY_UI: Record<
   Severity,
-  { label: string; short: string; text: string; surface: string; border: string; dot: string }
+  {
+    label: string;
+    short: string;
+    text: string;
+    surface: string;
+    border: string;
+    dot: string;
+    /** Left-edge colour on a finding card. Full-strength, unlike the border. */
+    spine: string;
+  }
 > = {
   high: {
     label: "Action needed",
@@ -13,6 +22,7 @@ export const SEVERITY_UI: Record<
     surface: "bg-[var(--high-surface)]",
     border: "border-[var(--high-border)]",
     dot: "bg-[var(--high)]",
+    spine: "border-l-[var(--high)]",
   },
   caution: {
     label: "Discuss with your doctor",
@@ -21,6 +31,7 @@ export const SEVERITY_UI: Record<
     surface: "bg-[var(--caution-surface)]",
     border: "border-[var(--caution-border)]",
     dot: "bg-[var(--caution)]",
+    spine: "border-l-[var(--caution)]",
   },
   standard: {
     label: "No change expected",
@@ -29,6 +40,7 @@ export const SEVERITY_UI: Record<
     surface: "bg-[var(--standard-surface)]",
     border: "border-[var(--standard-border)]",
     dot: "bg-[var(--standard)]",
+    spine: "border-l-[var(--standard)]",
   },
   unknown: {
     label: "See guideline",
@@ -37,6 +49,7 @@ export const SEVERITY_UI: Record<
     surface: "bg-[var(--unknown-surface)]",
     border: "border-[var(--unknown-border)]",
     dot: "bg-[var(--unknown)]",
+    spine: "border-l-[var(--unknown)]",
   },
 };
 

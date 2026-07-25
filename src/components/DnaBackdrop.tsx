@@ -266,10 +266,13 @@ export function DnaBackdrop() {
         className="absolute inset-0"
         style={{ maskImage: vignette, WebkitMaskImage: vignette }}
       >
-        <pre className={`${layer} text-foreground`} style={{ ...type, opacity: 0.3 }}>
+        {/* Accent rather than ink: the backdrop is where the page's colour
+            comes from, so the teal reads as a property of the whole surface
+            instead of a detail on one button. */}
+        <pre className={`${layer} text-accent`} style={{ ...type, opacity: 0.26 }}>
           {field}
         </pre>
-        <pre className={`${layer} text-foreground`} style={{ ...type, opacity: 0.62 }}>
+        <pre className={`${layer} text-accent`} style={{ ...type, opacity: 0.5 }}>
           {helices}
         </pre>
       </div>

@@ -232,7 +232,7 @@ export function UploadFlow({
                 type="button"
                 onClick={runSample}
                 disabled={busy}
-                className="rounded-lg bg-foreground px-5 py-2.5 text-sm font-medium text-background transition-opacity hover:opacity-90 disabled:opacity-40"
+                className="rounded-lg bg-accent px-5 py-2.5 text-sm font-medium text-white shadow-[0_1px_2px_rgba(11,94,91,0.25)] transition-colors hover:bg-accent-hover disabled:opacity-40"
               >
                 {busy ? "Reading genome…" : "See it work →"}
               </button>
@@ -345,7 +345,7 @@ export function UploadFlow({
             type="button"
             onClick={run}
             disabled={busy || (!raw && !reportText.trim())}
-            className="rounded-lg bg-foreground px-5 py-2.5 text-sm font-medium text-background transition-opacity hover:opacity-90 disabled:opacity-40"
+            className="rounded-lg bg-accent px-5 py-2.5 text-sm font-medium text-white shadow-[0_1px_2px_rgba(11,94,91,0.25)] transition-colors hover:bg-accent-hover disabled:opacity-40"
           >
             {busy ? "Analysing…" : "Check my medications"}
           </button>
@@ -448,8 +448,8 @@ export function UploadFlow({
                   aria-pressed={view === v}
                   className={`px-3.5 py-1.5 text-xs font-medium transition-colors ${
                     view === v
-                      ? "bg-foreground text-background"
-                      : "bg-surface hover:bg-accent-soft"
+                      ? "bg-accent text-white"
+                      : "bg-surface text-muted hover:bg-accent-tint hover:text-accent"
                   }`}
                 >
                   {v === "patient" ? "Patient view" : "Physician brief"}

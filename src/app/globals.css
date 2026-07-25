@@ -13,20 +13,28 @@
 :root {
   color-scheme: light;
 
-  --background: #fafbfc;
+  /* The page sits a shade deeper than the cards so white surfaces lift off it.
+     Near-white on near-white was the main reason the layout read as flat. */
+  --background: #f4f7f7;
   --surface: #ffffff;
   --foreground: #131820;
   --muted: #4f5966;
   /* Carries the small uppercase section labels, so it has to clear 4.5:1
      against the page rather than merely look recessive. */
   --faint: #646d7a;
-  --border: #e4e8ec;
-  --border-strong: #cbd2da;
+  --border: #dfe6e6;
+  --border-strong: #c3cfcf;
 
   /* The single accent. Deep enough to read as considered rather than as a
-     default framework blue. */
+     default framework blue. Carries the primary action, links, and the ASCII
+     backdrop, so the page has one colour running through it. */
   --accent: #0b5e5b;
-  --accent-soft: #e8f1f0;
+  --accent-hover: #0a504e;
+  /* Tint for supporting panels — provenance, gene calls, anything explaining
+     where the data came from. Separates "what we read" from "what it means"
+     without introducing a second colour. */
+  --accent-soft: #e9f1f0;
+  --accent-tint: #f0f6f5;
 
   /* Severity. Deep and desaturated - this is a medical report, not an alarm,
      and these are the only saturated colours on the page so that red still
@@ -69,7 +77,9 @@
   --color-unknown-surface: var(--unknown-surface);
   --color-unknown-border: var(--unknown-border);
   --color-accent: var(--accent);
+  --color-accent-hover: var(--accent-hover);
   --color-accent-soft: var(--accent-soft);
+  --color-accent-tint: var(--accent-tint);
 
   --font-display: var(--font-display);
   --font-sans: var(--font-sans);

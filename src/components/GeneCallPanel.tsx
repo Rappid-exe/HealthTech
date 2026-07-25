@@ -23,8 +23,11 @@ export function GeneCallPanel({ data }: { data: RawFileResult }) {
         : "raw array";
 
   return (
-    <div className="rounded-xl border border-border bg-surface">
-      <div className="border-b border-border px-5 py-3">
+    /* Tinted rather than white. Everything in this panel is provenance — where
+       the data came from and what could not be read — which is a different kind
+       of information from the findings, and should not compete with them. */
+    <div className="overflow-hidden rounded-xl border border-border bg-accent-tint">
+      <div className="border-b border-border bg-accent-soft px-5 py-3">
         <p className="text-xs font-semibold uppercase tracking-wider text-faint">
           Read from your {source} file
         </p>
