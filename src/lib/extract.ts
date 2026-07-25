@@ -98,7 +98,66 @@ Rules:
 6. If the source contains no genotypes, or no medications, return an empty array
    for that field rather than guessing.`;
 
-export class ExtractionError extends Error {}
+/**
+ * A failure we can explain to the caller.
+ *
+ * `kind` distinguishes causes that need different action — a rejected key is a
+ * configuration problem, a rate limit is transient, a refusal is about the
+ * document. Collapsing them into one "something went wrong" makes a deployment
+ * misconfiguration indistinguishable from an outage, which is exactly the
+ * situation this class was added to stop.
+ */
+export class ExtractionError extends Error {
+  constructor(
+    message: string,
+    readonly kind:
+      | "not_configured"
+      | "auth_rejected"
+      | "rate_limited"
+      | "unavailable"
+      | "refused"
+      | "bad_input"
+      | "bad_output" = "unavailable",
+  ) {
+    super(message);
+    this.name = "ExtractionError";
+  }
+}
+
+/** Maps an SDK error onto an ExtractionError, using its typed classes. */
+function classify(err: unknown): ExtractionError {
+  if (err instanceof Anthropic.AuthenticationError) {
+    return new ExtractionError(
+      "The Anthropic API key was rejected. Check that ANTHROPIC_API_KEY is set correctly on the server, with no leading or trailing whitespace.",
+      "auth_rejected",
+    );
+  }
+  if (err instanceof Anthropic.PermissionDeniedError) {
+    return new ExtractionError(
+      "The Anthropic API key does not have access to this model.",
+      "auth_rejected",
+    );
+  }
+  if (err instanceof Anthropic.RateLimitError) {
+    return new ExtractionError(
+      "The extraction service is rate limited. Try again in a moment.",
+      "rate_limited",
+    );
+  }
+  if (err instanceof Anthropic.APIConnectionError) {
+    return new ExtractionError(
+      "Could not reach the extraction service.",
+      "unavailable",
+    );
+  }
+  if (err instanceof Anthropic.APIError) {
+    return new ExtractionError(
+      `The extraction service returned an error (${err.status ?? "unknown"}).`,
+      "unavailable",
+    );
+  }
+  return new ExtractionError("Extraction failed unexpectedly.", "unavailable");
+}
 
 /**
  * Runs extraction over a report and an optional separate medication list.
@@ -110,14 +169,18 @@ export async function extract(
   reportText: string,
   medicationText?: string,
 ): Promise<ExtractionResult> {
-  const apiKey = process.env.ANTHROPIC_API_KEY;
+  // Trimmed deliberately: a key pasted into a hosting dashboard very often
+  // carries a leading space, and the resulting 401 is otherwise indistinguishable
+  // from an invalid key.
+  const apiKey = process.env.ANTHROPIC_API_KEY?.trim();
   if (!apiKey) {
     throw new ExtractionError(
       "ANTHROPIC_API_KEY is not configured on the server.",
+      "not_configured",
     );
   }
   if (!reportText.trim()) {
-    throw new ExtractionError("No report content was provided.");
+    throw new ExtractionError("No report content was provided.", "bad_input");
   }
 
   const client = new Anthropic({ apiKey });
@@ -126,33 +189,41 @@ export async function extract(
     ? `<report>\n${reportText}\n</report>\n\n<medication_list>\n${medicationText}\n</medication_list>`
     : `<report>\n${reportText}\n</report>`;
 
-  const response = await client.messages.create({
-    model: "claude-opus-5",
-    max_tokens: 8000,
-    system: SYSTEM_PROMPT,
-    // Transcription is not a reasoning-heavy task, and this sits in the demo's
-    // critical path, so we trade depth for latency.
-    output_config: {
-      effort: "low",
-      format: { type: "json_schema", schema: EXTRACTION_SCHEMA },
-    },
-    messages: [{ role: "user", content: userContent }],
-  });
+  let response;
+  try {
+    response = await client.messages.create({
+      model: "claude-opus-5",
+      max_tokens: 8000,
+      system: SYSTEM_PROMPT,
+      // Transcription is not a reasoning-heavy task, and this sits in the demo's
+      // critical path, so we trade depth for latency.
+      output_config: {
+        effort: "low",
+        format: { type: "json_schema", schema: EXTRACTION_SCHEMA },
+      },
+      messages: [{ role: "user", content: userContent }],
+    });
+  } catch (err) {
+    throw classify(err);
+  }
 
   if (response.stop_reason === "refusal") {
-    throw new ExtractionError("The model declined to process this document.");
+    throw new ExtractionError(
+      "The model declined to process this document.",
+      "refused",
+    );
   }
 
   const textBlock = response.content.find((b) => b.type === "text");
   if (!textBlock || textBlock.type !== "text") {
-    throw new ExtractionError("The model returned no readable output.");
+    throw new ExtractionError("The model returned no readable output.", "bad_output");
   }
 
   let parsed: unknown;
   try {
     parsed = JSON.parse(textBlock.text);
   } catch {
-    throw new ExtractionError("The model returned malformed JSON.");
+    throw new ExtractionError("The model returned malformed JSON.", "bad_output");
   }
 
   return normalise(parsed);

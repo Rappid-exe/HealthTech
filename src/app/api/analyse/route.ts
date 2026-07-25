@@ -75,7 +75,18 @@ export async function POST(request: Request) {
     return NextResponse.json(payload);
   } catch (err) {
     if (err instanceof ExtractionError) {
-      return NextResponse.json({ error: err.message }, { status: 503 });
+      // Status follows the cause so a misconfigured deployment is not
+      // indistinguishable from an outage in the logs or to the caller.
+      const status =
+        err.kind === "rate_limited"
+          ? 429
+          : err.kind === "bad_input"
+            ? 400
+            : err.kind === "refused"
+              ? 422
+              : 503;
+      console.error(`analyse: ${err.kind} — ${err.message}`);
+      return NextResponse.json({ error: err.message, kind: err.kind }, { status });
     }
     console.error("analyse route failed:", err);
     return NextResponse.json(
